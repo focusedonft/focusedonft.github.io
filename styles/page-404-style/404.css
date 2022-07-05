@@ -1,0 +1,40 @@
+:root {
+  /* COLORS */
+  --background: rgb(110, 81, 158);
+  --primary: #fff;
+  --secondary: #000;
+  --third: #ff0000;
+  --border: 1px solid red;
+  /* FONTS */
+  /* --heading1: 60pt;
+    --content: 37pt; */
+  /* BUTTONS */
+  --padding-best: 18px 32px;
+  --font-button: 16pt;
+  --radius: 8px;
+  /* SHADOW */
+  --shadow-best: 4px 24px 60px rgba(109, 141, 173, 25%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background);
+  color: var(--primary);
+  text-shadow: var(--shadow-best);
+}

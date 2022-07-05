@@ -1,0 +1,60 @@
+/**
+* _keyframes.scss
+*
+* Module for keyframes
+*/
+// keyframe used for chevron
+@keyframes down {
+  0% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+//keyframe used for navbar
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+//keyframe used for circle loop
+/*NOT USED*/
+@keyframes circularLoop {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,30 @@
+/**
+* _basic-tags.scss
+*
+* Module for the tags that will be repeated in all the pages
+*/
+@use "../partials/variables";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  image-rendering: auto;
+  shape-rendering: geometricPrecision;
+  body {
+    font-family: "Sora", sans-serif;
+    width: 100%;
+    background-color: variables.$color-background;
+    color: variables.$color-primary;
+    text-shadow: variables.$custom-box-shadow;
+    cursor: default;
+  }
+}

@@ -1,0 +1,76 @@
+/**
+* _mixins.scss
+*
+* Module for mixins
+*/
+
+// TO DO
+// flexbox
+// call to action
+// TIP
+// USE IF (IMPORTANCE) TO SET THE BORDER AND NO BACKGROUND BASED ON THE IMPORTANCE OF THE CALL TO ACTION
+@use "./variables";
+/*-----------------------------------*/
+/*  @block Call To Actions 
+/*-----------------------------------*/
+
+@mixin callToAction($importance: 1) {
+  text-decoration: none;
+  font-weight: 800;
+  transition: all 0.5s ease;
+  text-align: center;
+  display: inline-block;
+  font-size: variables.$button-font-size;
+  border-radius: variables.$custom-border-radius;
+  padding: variables.$custom-padding;
+  width: 100%;
+  @if $importance == 1 {
+    color: variables.$color-background;
+    background-color: variables.$color-primary;
+    &:hover {
+      box-shadow: 1px 1px 0px variables.$color-primary,
+        2px 2px 0px variables.$color-primary,
+        3px 3px 0px variables.$color-primary,
+        4px 4px 0px variables.$color-primary,
+        5px 5px 0px variables.$color-primary,
+        6px 6px 0px variables.$color-primary,
+        7px 7px 0px variables.$color-primary,
+        8px 8px 0px variables.$color-primary,
+        9px 9px 0px variables.$color-primary;
+    }
+  }
+  @if $importance == 2 {
+    background-color: variables.$color-background;
+    color: variables.$color-primary;
+    border: 2px solid variables.$color-primary;
+    &:hover {
+      background-color: variables.$color-primary;
+      color: variables.$color-background;
+    }
+  }
+  @if $importance == 3 {
+    background-color: variables.$color-background;
+    text-decoration: underline;
+    color: variables.$color-primary;
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+}
+/*-----------------------------------*/
+/*  @block Flexbox
+/*-----------------------------------*/
+
+@mixin flexbox(
+  $justifyContent: center,
+  $alignItems: center,
+  $gap: 2%,
+  $flexDirection: row
+) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $flexDirection;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+  gap: $gap;
+}
