@@ -85,7 +85,6 @@ body {
           padding: 0.5rem 0;
 
           ol {
-            display: none;
             text-indent: 10%;
             li {
               font-weight: 400;
@@ -425,6 +424,10 @@ body {
     margin-top: 20%;
   }
 }
+/*-----------------------------------*/
+/*  @block Responsive
+/*-----------------------------------*/
+
 // Small devices (landscape phones, 576px and up)
 @media screen and (min-width: 576px) {
 }

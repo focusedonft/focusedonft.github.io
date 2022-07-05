@@ -26,6 +26,7 @@ body .gallery, body .categories, body .projectExplained {
   width: 100%;
   height: 90vh;
   position: relative;
+  margin: 4rem 0;
 }
 
 /**
@@ -225,7 +226,6 @@ body header nav ul li {
   padding: 0.5rem 0;
 }
 body header nav ul li ol {
-  display: none;
   text-indent: 10%;
 }
 body header nav ul li ol li {
@@ -629,5 +629,9 @@ body .subFooter {
   width: 100%;
   margin-top: 20%;
 }
+
+/*-----------------------------------*/
+/*  @block Responsive
+/*-----------------------------------*/
 
 /*# sourceMappingURL=output-mobile-first.css.map */

@@ -110,6 +110,7 @@ html body {
   }
 }
 body {
+  font-size: 16px;
   /* ----------------------------------- */
   /* @block Header
   /* ----------------------------------- */
@@ -125,86 +126,68 @@ body {
 }
 body header {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
 }
-body header .topnav {
-  position: revert;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  overflow: hidden;
-  padding: 0% 10%;
+body header ul,
+body header ol {
+  list-style-type: none;
 }
-body header .topnav .right-menu {
-  float: right;
-}
-body header .topnav a {
-  float: left;
-  display: block;
-  color: rgb(251, 244, 255);
-  text-align: center;
-  padding: 35px 20px;
+body header a {
   text-decoration: none;
-  font-size: 17px;
+  color: rgb(251, 244, 255);
+  text-shadow: 2px 3px 5px rgba(76, 76, 76, 0.5);
+}
+body header #hamburger-menu {
+  color: rgb(251, 244, 255);
+  position: absolute;
+  top: 7%;
+  right: 10.4%;
+  z-index: 200;
+  transform: translate(-10.4%, -7%);
+  transform: scale(1.7);
   transition: all 0.35s ease-in-out;
 }
-body header .topnav a:hover {
-  cursor: pointer;
+body header #hamburger-menu:active {
+  color: rgb(191, 191, 191);
+}
+body header #hamburger-menu:hover {
+  transform: scale(2);
+}
+body header nav {
+  background-color: rgb(110, 81, 158);
+  position: relative;
+  z-index: 99;
+  visibility: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  font-size: 3.5rem;
+  transition: all 0.35s ease-in-out;
+}
+body header nav ul {
+  width: max-content;
+}
+body header nav ul li {
   font-weight: bold;
-}
-body header .topnav .padding-left-none {
-  padding-left: 0;
-}
-body header .topnav .icon {
-  display: none;
-}
-body header .active {
-  font-weight: 900;
-}
-body header .dropdown {
-  float: left;
-  overflow: hidden;
-  font-family: inherit;
-}
-body header .dropdown .dropbtn {
-  font-size: 18px;
-  font-family: inherit;
-  border: none;
-  outline: none;
-  color: rgb(251, 244, 255);
-  padding: 35px 20px 20px;
-  background-color: inherit;
-  margin: 0;
-}
-body header .dropdown:hover .dropbtn {
-  font-weight: bold;
-}
-body header .dropdown:hover .dropdown-content {
-  display: block;
-}
-body header .dropdown-content {
-  display: none;
-  z-index: 1;
-}
-body header .dropdown-content a {
-  float: none;
-  color: rgb(251, 244, 255);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
   text-align: left;
+  padding: 0.5rem 0;
 }
-body header .dropdown-content a:hover {
-  font-weight: 900;
+body header nav ul li ol {
+  text-indent: 10%;
+}
+body header nav ul li ol li {
+  font-weight: 400;
+  font-size: 2.5rem;
 }
 body h1 {
   width: 100%;
   padding: 7% 10% 0%;
   text-align: center;
-  font-size: 5.5em;
+  font-size: 4rem;
   font-weight: 200;
   text-shadow: 2px 3px 5px rgba(76, 76, 76, 0.5);
 }
@@ -222,10 +205,11 @@ body .cardsContainer {
   height: auto;
 }
 body .cardsContainer .card {
-  width: 23.2%;
+  text-shadow: 2px 3px 5px rgba(76, 76, 76, 0.5);
+  width: 100%;
   height: auto;
   position: relative;
-  padding: 2%;
+  padding: 2rem;
   margin: 10px;
   backdrop-filter: blur(17px) saturate(186%);
   -webkit-backdrop-filter: blur(17px) saturate(186%);
@@ -236,8 +220,12 @@ body .cardsContainer .card {
 body .cardsContainer .card img {
   width: 100%;
 }
+body .cardsContainer .card h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
 body .cardsContainer .card a {
-  display: block;
   margin-top: 10%;
   text-decoration: none;
   font-weight: 800;
@@ -247,21 +235,24 @@ body .cardsContainer .card a {
   font-size: 1.1em;
   border-radius: 8px;
   padding: 12px 24px;
-  width: 100%;
   color: rgb(110, 81, 158);
   background-color: rgb(251, 244, 255);
+  text-shadow: none;
+  display: block;
 }
 body .cardsContainer .card a:hover {
   box-shadow: 1px 1px 0px rgb(251, 244, 255), 2px 2px 0px rgb(251, 244, 255), 3px 3px 0px rgb(251, 244, 255), 4px 4px 0px rgb(251, 244, 255), 5px 5px 0px rgb(251, 244, 255), 6px 6px 0px rgb(251, 244, 255), 7px 7px 0px rgb(251, 244, 255), 8px 8px 0px rgb(251, 244, 255), 9px 9px 0px rgb(251, 244, 255);
 }
 body footer {
-  padding: 0 10%;
+  margin-top: 40%;
+  padding: 10% 10% 5%;
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
-  flex-direction: column;
-  height: 30vh;
+  justify-content: center;
+  gap: 0;
   text-align: left;
   backdrop-filter: blur(17px) saturate(186%);
   -webkit-backdrop-filter: blur(17px) saturate(186%);
@@ -271,67 +262,55 @@ body footer {
 body footer .spanWrapper {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0%;
 }
 body footer .spanWrapper span {
-  width: 33%;
+  width: 100%;
+  display: block;
+}
+body footer .spanWrapper span p {
+  font-size: 1.5rem;
 }
 body footer .spanWrapper span ul li {
   list-style-type: none;
 }
 body footer .spanWrapper span:nth-child(2) {
-  text-align: center;
-}
-body footer .spanWrapper span:nth-child(3) {
-  text-align: right;
+  margin: 10% 0;
 }
 body .subFooter {
-  position: absolute;
-  bottom: 0%;
   width: 100%;
-  height: 5vh;
-  display: grid;
-  place-content: center;
+  margin-top: 20%;
 }
 
 /*-----------------------------------*/
 /*  @block Responsive
 /*-----------------------------------*/
 /* Small devices (landscape phones, 576px and up) */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: none;
+@media (min-width: 576px) {
+  * {
+    border: 1px solid green;
   }
-  .topnav a.icon {
-    float: right;
-    display: block;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  * {
+    outline: 1px solid blue;
   }
-  .dropdown .dropbtn {
-    display: none;
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  * {
+    outline: 1px solid aqua;
   }
-  .topnav.responsive {
-    position: relative;
-  }
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {
-    float: none;
-  }
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown-content {
-    position: relative;
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  * {
+    outline: 1px solid yellow;
   }
 }
 
