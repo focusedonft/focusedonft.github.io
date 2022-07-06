@@ -1,25 +1,21 @@
 let hamburger = document.getElementById("hamburger-menu");
 let navElement = document.getElementsByTagName("nav")[0];
-let trigger = document.querySelector("nav ul li:nth-child(3) a");
 let dropdown = document.querySelector("nav ul li:nth-child(3) ol");
+let triggerForClosing = document.querySelector("nav ul:not(ol) ");
 
 hamburger.addEventListener("click", () => {
   if (navElement.style.visibility === "hidden") {
     navElement.style.visibility = "visible";
+    dropdown.style.display = "visible";
   } else {
     navElement.style.visibility = "hidden";
-    dropdown.style.display = "none";
+    dropdown.style.display = "hidden";
   }
 });
 
-trigger.addEventListener("click", () => {
-  if (dropdown.style.display === "none") {
-    dropdown.style.display = "block";
-  } else {
-    dropdown.style.display = "none";
-  }
+triggerForClosing.addEventListener("click", () => {
+  navElement.style.visibility = "hidden";
 });
-
 // -----------------------------
 
 // SCRIPT FOR SLIDESHOW
