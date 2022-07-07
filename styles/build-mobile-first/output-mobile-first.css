@@ -143,9 +143,6 @@ body {
   /*-----------------------------------*/
   /*  @block Project Explained
   /*-----------------------------------*/
-  /*-----------------------------------*/
-  /*  @block Footer
-  /*-----------------------------------*/
 }
 body .mainWrapper {
   padding: 0 10%;
@@ -279,6 +276,9 @@ body .hero .left h1 {
   width: 100%;
   margin-bottom: 3rem;
 }
+body .hero .left h1 span:nth-child(2n) {
+  display: block;
+}
 body .hero .left a {
   text-decoration: none;
   font-weight: 800;
@@ -302,8 +302,8 @@ body .hero .right p {
 }
 body .hero .chevron {
   position: absolute;
-  top: 99%;
-  transform: translateX(-99%);
+  top: 97%;
+  transform: translateX(-97%);
   animation: down 0.9s ease-in-out infinite alternate;
 }
 body h1,
@@ -381,12 +381,8 @@ body .gallery .slideshow-container .mySlides .secondaryInfo {
   order: 2;
   width: 49%;
 }
-body .gallery .slideshow-container .mySlides .secondaryInfo ul {
-  list-style-type: none;
-  font-size: 1em;
-}
-body .gallery .slideshow-container .mySlides .secondaryInfo ul li {
-  padding: 10px;
+body .gallery .slideshow-container .mySlides .secondaryInfo table {
+  width: 100%;
 }
 body .gallery .dotWrapper {
   text-align: center;
@@ -518,11 +514,26 @@ body .projectExplained #projectWrapper {
 }
 body .projectExplained #projectWrapper h4 {
   font-size: 2em;
+  margin-bottom: 2rem;
 }
 body .projectExplained #projectWrapper .explanation {
   width: 100%;
   text-align: left;
   margin-bottom: 30%;
+}
+body .projectExplained #projectWrapper .explanation h2,
+body .projectExplained #projectWrapper .explanation h3 {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: auto;
+}
+body .projectExplained #projectWrapper .explanation span {
+  line-height: 1.8rem;
+}
+body .projectExplained #projectWrapper .explanation span span:nth-child(1) {
+  margin-bottom: 1.2rem;
+  display: inline-block;
 }
 body .projectExplained #projectWrapper .explanation a {
   text-decoration: none;
@@ -537,28 +548,23 @@ body .projectExplained #projectWrapper .explanation a {
   background-color: rgb(110, 81, 158);
   text-decoration: underline;
   color: rgb(251, 244, 255);
+  font-size: 1rem;
   text-align: left;
   padding: 0;
+  margin-top: 4rem;
 }
 body .projectExplained #projectWrapper .explanation a:hover {
   transform: translateX(10px);
 }
-body .projectExplained #projectWrapper .explanation p {
-  margin: 5% 0 6%;
-  font-weight: 200;
-}
-body .projectExplained #projectWrapper .explanation p:nth-of-type(2) {
-  margin-bottom: 13%;
-}
-body .projectExplained #projectWrapper .roadmap {
+body .projectExplained .roadmap {
   order: 1;
   width: 100%;
   text-align: left;
 }
-body .projectExplained #projectWrapper .roadmap p {
+body .projectExplained .roadmap p {
   display: inline;
 }
-body .projectExplained #projectWrapper .roadmap span {
+body .projectExplained .roadmap span {
   margin-top: 10px;
   height: 10px;
   display: block;
@@ -566,32 +572,36 @@ body .projectExplained #projectWrapper .roadmap span {
   border-radius: 2px;
   position: relative;
 }
-body .projectExplained #projectWrapper .roadmap .point {
+body .projectExplained .roadmap .point {
   margin: 3.5%;
   margin-left: 0;
 }
-body .projectExplained #projectWrapper .roadmap .point:nth-of-type(1) span {
+body .projectExplained .roadmap .point:nth-of-type(1) span {
   width: 20%;
 }
-body .projectExplained #projectWrapper .roadmap .point:nth-of-type(2) span {
+body .projectExplained .roadmap .point:nth-of-type(2) span {
   width: 48%;
 }
-body .projectExplained #projectWrapper .roadmap .point:nth-of-type(3) span {
+body .projectExplained .roadmap .point:nth-of-type(3) span {
   width: 63%;
 }
-body .projectExplained #projectWrapper .roadmap .point:nth-of-type(4) span {
+body .projectExplained .roadmap .point:nth-of-type(4) span {
   width: 24%;
 }
-body .projectExplained #projectWrapper .roadmap .point:nth-of-type(5) span {
+body .projectExplained .roadmap .point:nth-of-type(5) span {
   width: 57%;
 }
-body .projectExplained #projectWrapper .roadmap .point:nth-of-type(6) span {
+body .projectExplained .roadmap .point:nth-of-type(6) span {
   width: 87%;
 }
-body .projectExplained #projectWrapper .roadmap .point:nth-of-type(7) span {
+body .projectExplained .roadmap .point:nth-of-type(7) span {
   width: 20%;
 }
-body footer {
+
+/*-----------------------------------*/
+/*  @block Footer
+  /*-----------------------------------*/
+footer {
   margin-top: 40%;
   padding: 10% 10% 5%;
   position: relative;
@@ -607,7 +617,7 @@ body footer {
   background-color: rgba(107, 108, 112, 0.64);
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
-body footer .spanWrapper {
+footer .spanWrapper {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -616,20 +626,21 @@ body footer .spanWrapper {
   justify-content: center;
   gap: 0%;
 }
-body footer .spanWrapper span {
+footer .spanWrapper span {
   width: 100%;
   display: block;
 }
-body footer .spanWrapper span p {
+footer .spanWrapper span p {
   font-size: 1.5rem;
 }
-body footer .spanWrapper span ul li {
+footer .spanWrapper span ul li {
   list-style-type: none;
 }
-body footer .spanWrapper span:nth-child(2) {
+footer .spanWrapper span:nth-child(2) {
   margin: 10% 0;
 }
-body .subFooter {
+
+.subFooter {
   width: 100%;
   margin-top: 20%;
 }
@@ -642,7 +653,23 @@ body .subFooter {
     outline: 1px solid red;
   }
   body .hero .left h1 {
-    font-size: 10px;
+    font-size: 5rem;
+  }
+  body .hero .left a {
+    font-size: 1.2rem;
+  }
+  body .gallery .slideshow-container .mySlides figure {
+    width: 77.6%;
+  }
+  body .categories .categoriesWrapper div a,
+body .categories .categoriesWrapper div a:nth-of-type(2) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 45%;
+    float: left;
+  }
+  body .categories .categoriesWrapper div a:nth-of-type(2) {
+    margin-left: 10%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -650,12 +677,108 @@ body .subFooter {
     outline: 1px solid aqua;
   }
   body .hero .left h1 {
-    font-size: 300px;
+    font-size: 5rem;
+  }
+  body .gallery .slideshow-container .mySlides figure {
+    width: 60.4%;
+  }
+  body .categories .categoriesWrapper {
+    gap: 5%;
+  }
+  body .categories .categoriesWrapper div {
+    width: 47.5%;
+  }
+  body .categories .categoriesWrapper div a,
+body .categories .categoriesWrapper div a:nth-of-type(2) {
+    width: 100%;
+  }
+  body .categories .categoriesWrapper div a:nth-of-type(2) {
+    margin: 0.4rem 0 0;
+  }
+  body .projectExplained #projectWrapper .explanation a {
+    margin-top: 3rem;
+  }
+  body .projectExplained #projectWrapper .explanation {
+    margin-bottom: 18%;
+  }
+  footer {
+    margin-top: 25%;
+  }
+  footer .spanWrapper span {
+    width: 33.3%;
+  }
+  footer .subFooter {
+    text-align: center;
+  }
+  footer .spanWrapper {
+    align-items: stretch;
+  }
+  footer .spanWrapper span:nth-child(2) {
+    margin: 0%;
   }
 }
 @media screen and (min-width: 992px) {
   * {
     outline: 1px solid green;
+  }
+  body .hero .left {
+    width: 50%;
+  }
+  body .hero .left h1 {
+    font-size: 3.974rem;
+  }
+  body .hero .left a {
+    font-size: 0.85rem;
+  }
+  body .hero .right {
+    width: 50%;
+    height: 100%;
+  }
+  body .hero .right p {
+    display: initial;
+    position: absolute;
+    top: 93%;
+    right: 8.3%;
+  }
+  body .gallery {
+    height: 70vh;
+    flex-direction: column;
+  }
+  body .gallery .slideshow-container .mySlides {
+    height: auto;
+  }
+  body .gallery .slideshow-container .mySlides .primaryInfo,
+body .gallery .slideshow-container .mySlides .secondaryInfo {
+    width: 25%;
+  }
+  body .gallery .slideshow-container .mySlides figure {
+    width: 46%;
+    order: 2;
+  }
+  body .projectExplained #projectWrapper {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  body .projectExplained .roadmap h4,
+body .projectExplained .roadmap .point {
+    margin-left: 3%;
+  }
+  body .projectExplained #projectWrapper .explanation,
+body .projectExplained .roadmap {
+    width: 50%;
+    margin: 0%;
+  }
+  footer {
+    margin-top: 20%;
+  }
+  footer .spanWrapper span:nth-child(2) {
+    text-align: center;
+  }
+  footer .spanWrapper span:nth-child(3) {
+    text-align: right;
+  }
+  .subFooter {
+    margin-top: 6%;
   }
 }
 @media screen and (min-width: 1200px) {

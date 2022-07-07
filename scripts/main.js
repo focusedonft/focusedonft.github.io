@@ -7,9 +7,11 @@ hamburger.addEventListener("click", () => {
   if (navElement.style.visibility === "hidden") {
     navElement.style.visibility = "visible";
     dropdown.style.display = "visible";
+    // document.body.style.overflowY = "hidden";
   } else {
     navElement.style.visibility = "hidden";
     dropdown.style.display = "hidden";
+    // document.body.style.overflowY = "scroll";
   }
 });
 
@@ -38,7 +40,7 @@ function showSlides() {
   }
   slides[slideIndex - 1].style.display = "flex";
   dots[slideIndex - 1].className += " active";
-  setTimeout(showSlides, 4500); // Change image every 4.5 seconds
+  // setTimeout(showSlides, 4500); // Change image every 4.5 seconds
 }
 // ETH - DOLL CONVERSION API
 var eth = document.getElementById("ethereumPrice");
