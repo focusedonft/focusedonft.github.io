@@ -22,6 +22,107 @@
 /*-----------------------------------*/
 /*  @block Sections
   /*-----------------------------------*/
+header {
+  position: absolute;
+}
+header ul,
+header ol {
+  list-style-type: none;
+}
+header a {
+  text-decoration: none;
+  color: rgb(251, 244, 255);
+  text-shadow: 2px 3px 5px rgba(76, 76, 76, 0.5);
+}
+header #hamburger-menu {
+  color: rgb(251, 244, 255);
+  position: absolute;
+  top: 7%;
+  right: 10.4%;
+  z-index: 200;
+  transform: translate(-10.4%, -7%);
+  transform: scale(1.7);
+  transition: all 0.35s ease-in-out;
+}
+header #hamburger-menu:hover {
+  transform: scale(2);
+}
+header nav {
+  background-color: rgb(110, 81, 158);
+  position: relative;
+  z-index: 99;
+  visibility: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  font-size: 3.5rem;
+  transition: all 0.35s ease-in-out;
+}
+header nav ul {
+  width: max-content;
+}
+header nav ul li {
+  font-weight: bold;
+  text-align: left;
+  padding: 0.5rem 0;
+}
+header nav ul li ol {
+  text-indent: 10%;
+}
+header nav ul li ol li {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+footer {
+  margin-top: 40%;
+  padding: 5% 10% 2%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  text-align: left;
+  backdrop-filter: blur(17px) saturate(186%);
+  -webkit-backdrop-filter: blur(17px) saturate(186%);
+  background-color: rgba(107, 108, 112, 0.64);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+footer .spanWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0%;
+}
+footer .spanWrapper span {
+  width: 100%;
+  display: block;
+}
+footer .spanWrapper span p {
+  font-size: 1.5rem;
+}
+footer .spanWrapper span ul li {
+  list-style-type: none;
+}
+footer .spanWrapper span:nth-child(2) {
+  margin: 10% 0;
+}
+
+.subFooter {
+  width: 100%;
+  margin-top: 20%;
+}
+
 /**
 * _basic-tags.scss
 *
@@ -122,66 +223,7 @@ body {
   /*-----------------------------------*/
   /*-----------------------------------*/
   /*  @block Footer
-  /*-----------------------------------*/
-}
-body header {
-  position: absolute;
-}
-body header ul,
-body header ol {
-  list-style-type: none;
-}
-body header a {
-  text-decoration: none;
-  color: rgb(251, 244, 255);
-  text-shadow: 2px 3px 5px rgba(76, 76, 76, 0.5);
-}
-body header #hamburger-menu {
-  color: rgb(251, 244, 255);
-  position: absolute;
-  top: 7%;
-  right: 10.4%;
-  z-index: 200;
-  transform: translate(-10.4%, -7%);
-  transform: scale(1.7);
-  transition: all 0.35s ease-in-out;
-}
-body header #hamburger-menu:active {
-  color: rgb(191, 191, 191);
-}
-body header #hamburger-menu:hover {
-  transform: scale(2);
-}
-body header nav {
-  background-color: rgb(110, 81, 158);
-  position: relative;
-  z-index: 99;
-  visibility: hidden;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0;
-  font-size: 3.5rem;
-  transition: all 0.35s ease-in-out;
-}
-body header nav ul {
-  width: max-content;
-}
-body header nav ul li {
-  font-weight: bold;
-  text-align: left;
-  padding: 0.5rem 0;
-}
-body header nav ul li ol {
-  text-indent: 10%;
-}
-body header nav ul li ol li {
-  font-weight: 400;
-  font-size: 2.5rem;
+    /*-----------------------------------*/
 }
 body h1 {
   width: 100%;
@@ -223,98 +265,109 @@ body .cardsContainer .card img {
 body .cardsContainer .card h2 {
   font-size: 2rem;
   font-weight: bold;
-  padding: 0.5rem 0;
+  padding: 2% 0 5%;
 }
 body .cardsContainer .card a {
-  margin-top: 10%;
+  margin-top: 15%;
   text-decoration: none;
   font-weight: 800;
   transition: all 0.5s ease;
   text-align: center;
   display: inline-block;
   font-size: 1.1em;
-  border-radius: 8px;
-  padding: 12px 24px;
+  border-radius: 108px;
+  padding: 13px 24px;
+  width: 100%;
   color: rgb(110, 81, 158);
   background-color: rgb(251, 244, 255);
   text-shadow: none;
   display: block;
 }
 body .cardsContainer .card a:hover {
-  box-shadow: 1px 1px 0px rgb(251, 244, 255), 2px 2px 0px rgb(251, 244, 255),
-    3px 3px 0px rgb(251, 244, 255), 4px 4px 0px rgb(251, 244, 255),
-    5px 5px 0px rgb(251, 244, 255), 6px 6px 0px rgb(251, 244, 255),
-    7px 7px 0px rgb(251, 244, 255), 8px 8px 0px rgb(251, 244, 255),
-    9px 9px 0px rgb(251, 244, 255);
-}
-body footer {
-  margin-top: 40%;
-  padding: 10% 10% 5%;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0;
-  text-align: left;
-  backdrop-filter: blur(17px) saturate(186%);
-  -webkit-backdrop-filter: blur(17px) saturate(186%);
-  background-color: rgba(107, 108, 112, 0.64);
-  border: 1px solid rgba(255, 255, 255, 0.125);
-}
-body footer .spanWrapper {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0%;
-}
-body footer .spanWrapper span {
-  width: 100%;
-  display: block;
-}
-body footer .spanWrapper span p {
-  font-size: 1.5rem;
-}
-body footer .spanWrapper span ul li {
-  list-style-type: none;
-}
-body footer .spanWrapper span:nth-child(2) {
-  margin: 10% 0;
-}
-body .subFooter {
-  width: 100%;
-  margin-top: 20%;
+  box-shadow: 1px 1px 0px rgb(251, 244, 255), 2px 2px 0px rgb(251, 244, 255), 3px 3px 0px rgb(251, 244, 255), 4px 4px 0px rgb(251, 244, 255), 5px 5px 0px rgb(251, 244, 255), 6px 6px 0px rgb(251, 244, 255), 7px 7px 0px rgb(251, 244, 255), 8px 8px 0px rgb(251, 244, 255), 9px 9px 0px rgb(251, 244, 255);
 }
 
 /*-----------------------------------*/
 /*  @block Responsive
 /*-----------------------------------*/
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
   * {
-    border: 1px solid green;
+    outline: 1px solid red;
   }
 }
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  * {
-    outline: 1px solid blue;
-  }
-}
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media screen and (min-width: 768px) {
   * {
     outline: 1px solid aqua;
   }
+  body .cardsContainer .card {
+    width: 46.6%;
+  }
+  body footer {
+    margin-top: 25%;
+  }
+  body footer .spanWrapper span {
+    width: 33.3%;
+  }
+  body footer .subFooter {
+    text-align: center;
+  }
+  body footer .spanWrapper {
+    align-items: stretch;
+  }
+  body footer .spanWrapper span:nth-child(2) {
+    margin: 0%;
+  }
 }
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media screen and (min-width: 992px) {
+  * {
+    outline: 1px solid green;
+  }
+  body .cardsContainer .card {
+    width: 30.7%;
+  }
+  body .cardsContainer .card h2 {
+    font-size: 1.5rem;
+  }
+  body .cardsContainer .card a {
+    font-size: 0.9rem;
+  }
+  body footer {
+    margin-top: 20%;
+  }
+  body footer .spanWrapper span:nth-child(2) {
+    text-align: center;
+  }
+  body footer .spanWrapper span:nth-child(3) {
+    text-align: right;
+  }
+  .subFooter {
+    margin-top: 2%;
+  }
+}
+@media screen and (min-width: 1200px) {
   * {
     outline: 1px solid yellow;
+  }
+  body .cardsContainer .card h2 {
+    font-size: 2rem;
+  }
+  body .cardsContainer .card a {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  * {
+    outline: 1px solid blue;
+  }
+  body .cardsContainer .card {
+    width: 23%;
+  }
+  body .cardsContainer .card h2 {
+    font-size: 1.8rem;
+  }
+  body .cardsContainer .card a {
+    font-size: 1rem;
   }
 }
 

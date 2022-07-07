@@ -1,0 +1,90 @@
+@use "../partials/variables";
+@use "../partials/mixins";
+@use "../partials/extends";
+header {
+  position: absolute;
+  ul,
+  ol {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: variables.$color-primary;
+    text-shadow: variables.$custom-text-shadow;
+  }
+  #hamburger-menu {
+    color: variables.$color-primary;
+    position: absolute;
+    top: 7%;
+    right: 10.4%;
+    z-index: 200;
+    transform: translate(-10.4%, -7%);
+    transform: scale(1.7);
+    transition: all 0.35s ease-in-out;
+
+    &:hover {
+      transform: scale(2);
+    }
+  }
+  nav {
+    background-color: variables.$color-background;
+    position: relative;
+    z-index: 99;
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    @include mixins.flexbox($flexDirection: column, $gap: 0);
+    font-size: 3.5rem;
+    transition: all 0.35s ease-in-out;
+
+    ul {
+      width: max-content;
+
+      li {
+        font-weight: bold;
+        text-align: left;
+        padding: 0.5rem 0;
+
+        ol {
+          text-indent: 10%;
+          li {
+            font-weight: 400;
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  margin-top: 40%;
+  padding: 5% 10% 2%;
+  position: relative;
+  @include mixins.flexbox($gap: 0);
+  text-align: left;
+  backdrop-filter: blur(17px) saturate(186%);
+  -webkit-backdrop-filter: blur(17px) saturate(186%);
+  background-color: rgba(107, 108, 112, 0.64);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  .spanWrapper {
+    width: 100%;
+    @include mixins.flexbox($gap: 0%);
+    span {
+      width: 100%;
+      display: block;
+      p {
+        font-size: 1.5rem;
+      }
+      ul li {
+        list-style-type: none;
+      }
+      &:nth-child(2) {
+        margin: 10% 0;
+      }
+    }
+  }
+}
+.subFooter {
+  width: 100%;
+  margin-top: 20%;
+}

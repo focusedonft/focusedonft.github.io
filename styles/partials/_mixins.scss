@@ -21,7 +21,7 @@
   text-align: center;
   display: inline-block;
   font-size: variables.$button-font-size;
-  border-radius: variables.$custom-border-radius;
+  border-radius: calc(variables.$custom-border-radius + 100px);
   padding: variables.$custom-padding;
   width: 100%;
   @if $importance == 1 {

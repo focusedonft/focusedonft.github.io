@@ -29,6 +29,107 @@ body .gallery, body .categories, body .projectExplained {
   margin: 4rem 0;
 }
 
+header {
+  position: absolute;
+}
+header ul,
+header ol {
+  list-style-type: none;
+}
+header a {
+  text-decoration: none;
+  color: rgb(251, 244, 255);
+  text-shadow: 2px 3px 5px rgba(76, 76, 76, 0.5);
+}
+header #hamburger-menu {
+  color: rgb(251, 244, 255);
+  position: absolute;
+  top: 7%;
+  right: 10.4%;
+  z-index: 200;
+  transform: translate(-10.4%, -7%);
+  transform: scale(1.7);
+  transition: all 0.35s ease-in-out;
+}
+header #hamburger-menu:hover {
+  transform: scale(2);
+}
+header nav {
+  background-color: rgb(110, 81, 158);
+  position: relative;
+  z-index: 99;
+  visibility: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  font-size: 3.5rem;
+  transition: all 0.35s ease-in-out;
+}
+header nav ul {
+  width: max-content;
+}
+header nav ul li {
+  font-weight: bold;
+  text-align: left;
+  padding: 0.5rem 0;
+}
+header nav ul li ol {
+  text-indent: 10%;
+}
+header nav ul li ol li {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+footer {
+  margin-top: 40%;
+  padding: 5% 10% 2%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  text-align: left;
+  backdrop-filter: blur(17px) saturate(186%);
+  -webkit-backdrop-filter: blur(17px) saturate(186%);
+  background-color: rgba(107, 108, 112, 0.64);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+footer .spanWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0%;
+}
+footer .spanWrapper span {
+  width: 100%;
+  display: block;
+}
+footer .spanWrapper span p {
+  font-size: 1.5rem;
+}
+footer .spanWrapper span ul li {
+  list-style-type: none;
+}
+footer .spanWrapper span:nth-child(2) {
+  margin: 10% 0;
+}
+
+.subFooter {
+  width: 100%;
+  margin-top: 20%;
+}
+
 /**
 * _basic-tags.scss
 *
@@ -143,6 +244,9 @@ body {
   /*-----------------------------------*/
   /*  @block Project Explained
   /*-----------------------------------*/
+  /*-----------------------------------*/
+  /*  @block Footer
+    /*-----------------------------------*/
 }
 body .mainWrapper {
   padding: 0 10%;
@@ -173,65 +277,6 @@ body aside .countdown p:nth-child(1) {
 }
 body aside .countdown p:nth-child(2) {
   font-weight: 100;
-}
-body header {
-  position: absolute;
-}
-body header ul,
-body header ol {
-  list-style-type: none;
-}
-body header a {
-  text-decoration: none;
-  color: rgb(251, 244, 255);
-  text-shadow: 2px 3px 5px rgba(76, 76, 76, 0.5);
-}
-body header #hamburger-menu {
-  color: rgb(251, 244, 255);
-  position: absolute;
-  top: 7%;
-  right: 10.4%;
-  z-index: 200;
-  transform: translate(-10.4%, -7%);
-  transform: scale(1.7);
-  transition: all 0.35s ease-in-out;
-}
-body header #hamburger-menu:active {
-  color: rgb(191, 191, 191);
-}
-body header #hamburger-menu:hover {
-  transform: scale(2);
-}
-body header nav {
-  background-color: rgb(110, 81, 158);
-  position: relative;
-  z-index: 99;
-  visibility: hidden;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0;
-  font-size: 3.5rem;
-  transition: all 0.35s ease-in-out;
-}
-body header nav ul {
-  width: max-content;
-}
-body header nav ul li {
-  font-weight: bold;
-  text-align: left;
-  padding: 0.5rem 0;
-}
-body header nav ul li ol {
-  text-indent: 10%;
-}
-body header nav ul li ol li {
-  font-weight: 400;
-  font-size: 2.5rem;
 }
 body .hero {
   background: rgb(110, 81, 158) center/cover url("/images/tree-background.webp") no-repeat;
@@ -286,8 +331,8 @@ body .hero .left a {
   text-align: center;
   display: inline-block;
   font-size: 1.1em;
-  border-radius: 8px;
-  padding: 12px 24px;
+  border-radius: 108px;
+  padding: 13px 24px;
   width: 100%;
   color: rgb(110, 81, 158);
   background-color: rgb(251, 244, 255);
@@ -359,8 +404,8 @@ body .gallery .slideshow-container .mySlides .primaryInfo a {
   text-align: center;
   display: inline-block;
   font-size: 1.1em;
-  border-radius: 8px;
-  padding: 12px 24px;
+  border-radius: 108px;
+  padding: 13px 24px;
   width: 100%;
   color: rgb(110, 81, 158);
   background-color: rgb(251, 244, 255);
@@ -454,8 +499,8 @@ body .categories .categoriesWrapper div a {
   text-align: center;
   display: inline-block;
   font-size: 1.1em;
-  border-radius: 8px;
-  padding: 12px 24px;
+  border-radius: 108px;
+  padding: 13px 24px;
   width: 100%;
   color: rgb(110, 81, 158);
   background-color: rgb(251, 244, 255);
@@ -471,8 +516,8 @@ body .categories .categoriesWrapper div a:nth-of-type(2) {
   text-align: center;
   display: inline-block;
   font-size: 1.1em;
-  border-radius: 8px;
-  padding: 12px 24px;
+  border-radius: 108px;
+  padding: 13px 24px;
   width: 100%;
   background-color: rgb(110, 81, 158);
   color: rgb(251, 244, 255);
@@ -542,8 +587,8 @@ body .projectExplained #projectWrapper .explanation a {
   text-align: center;
   display: inline-block;
   font-size: 1.1em;
-  border-radius: 8px;
-  padding: 12px 24px;
+  border-radius: 108px;
+  padding: 13px 24px;
   width: 100%;
   background-color: rgb(110, 81, 158);
   text-decoration: underline;
@@ -596,53 +641,6 @@ body .projectExplained .roadmap .point:nth-of-type(6) span {
 }
 body .projectExplained .roadmap .point:nth-of-type(7) span {
   width: 20%;
-}
-
-/*-----------------------------------*/
-/*  @block Footer
-  /*-----------------------------------*/
-footer {
-  margin-top: 40%;
-  padding: 10% 10% 5%;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0;
-  text-align: left;
-  backdrop-filter: blur(17px) saturate(186%);
-  -webkit-backdrop-filter: blur(17px) saturate(186%);
-  background-color: rgba(107, 108, 112, 0.64);
-  border: 1px solid rgba(255, 255, 255, 0.125);
-}
-footer .spanWrapper {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0%;
-}
-footer .spanWrapper span {
-  width: 100%;
-  display: block;
-}
-footer .spanWrapper span p {
-  font-size: 1.5rem;
-}
-footer .spanWrapper span ul li {
-  list-style-type: none;
-}
-footer .spanWrapper span:nth-child(2) {
-  margin: 10% 0;
-}
-
-.subFooter {
-  width: 100%;
-  margin-top: 20%;
 }
 
 /*-----------------------------------*/
@@ -721,6 +719,9 @@ body .categories .categoriesWrapper div a:nth-of-type(2) {
   * {
     outline: 1px solid green;
   }
+  body .hero {
+    background-size: 70%;
+  }
   body .hero .left {
     width: 50%;
   }
@@ -778,17 +779,35 @@ body .projectExplained .roadmap {
     text-align: right;
   }
   .subFooter {
-    margin-top: 6%;
+    margin-top: 2%;
   }
 }
 @media screen and (min-width: 1200px) {
   * {
     outline: 1px solid yellow;
   }
+  body .hero .left h1 {
+    font-size: 4.83rem;
+  }
+  body .hero .left a {
+    font-size: 1rem;
+  }
+  body .categories .categoriesWrapper div {
+    width: 30%;
+  }
 }
 @media screen and (min-width: 1400px) {
   * {
     outline: 1px solid blue;
+  }
+  body .hero .left h1 {
+    font-size: 5.78rem;
+  }
+  body .hero .left a {
+    font-size: 1.3rem;
+  }
+  body .categories .categoriesWrapper div {
+    width: 30%;
   }
 }
 

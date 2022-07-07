@@ -1,6 +1,7 @@
 @use "../styles/partials/variables";
 @use "../styles/partials/mixins";
 @use "../styles/partials/extends";
+@use "../styles/partials/header-footer";
 @use "../styles/partials/basic-tags";
 @use "../styles/partials/keyframes";
 * {
@@ -21,7 +22,6 @@ body {
     left: 0;
     width: 100%;
     padding: 1rem 0;
-
     z-index: 100;
     .countdown {
       @include mixins.flexbox();
@@ -41,63 +41,7 @@ body {
   /* ----------------------------------- */
   /* @block Header
   /* ----------------------------------- */
-  header {
-    position: absolute;
-    ul,
-    ol {
-      list-style-type: none;
-    }
-    a {
-      text-decoration: none;
-      color: variables.$color-primary;
-      text-shadow: variables.$custom-text-shadow;
-    }
-    #hamburger-menu {
-      color: variables.$color-primary;
-      position: absolute;
-      top: 7%;
-      right: 10.4%;
-      z-index: 200;
-      transform: translate(-10.4%, -7%);
-      transform: scale(1.7);
-      transition: all 0.35s ease-in-out;
-      &:active {
-        color: rgb(191, 191, 191);
-      }
-      &:hover {
-        transform: scale(2);
-      }
-    }
-    nav {
-      background-color: variables.$color-background;
-      position: relative;
-      z-index: 99;
-      visibility: hidden;
-      height: 100vh;
-      width: 100vw;
-      @include mixins.flexbox($gap: 0);
-      font-size: 3.5rem;
-      transition: all 0.35s ease-in-out;
-
-      ul {
-        width: max-content;
-
-        li {
-          font-weight: bold;
-          text-align: left;
-          padding: 0.5rem 0;
-
-          ol {
-            text-indent: 10%;
-            li {
-              font-weight: 400;
-              font-size: 2.5rem;
-            }
-          }
-        }
-      }
-    }
-  }
+  // imported using partials/header-footer.scss
   /*-----------------------------------*/
   /*  @block Hero Section 
   /*-----------------------------------*/
@@ -401,41 +345,10 @@ body {
       }
     }
   }
-}
-/*-----------------------------------*/
-/*  @block Footer
   /*-----------------------------------*/
-footer {
-  margin-top: 40%;
-  padding: 10% 10% 5%;
-  position: relative;
-  @include mixins.flexbox($gap: 0);
-  text-align: left;
-  backdrop-filter: blur(17px) saturate(186%);
-  -webkit-backdrop-filter: blur(17px) saturate(186%);
-  background-color: rgba(107, 108, 112, 0.64);
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  .spanWrapper {
-    width: 100%;
-    @include mixins.flexbox($gap: 0%);
-    span {
-      width: 100%;
-      display: block;
-      p {
-        font-size: 1.5rem;
-      }
-      ul li {
-        list-style-type: none;
-      }
-      &:nth-child(2) {
-        margin: 10% 0;
-      }
-    }
-  }
-}
-.subFooter {
-  width: 100%;
-  margin-top: 20%;
+  /*  @block Footer
+    /*-----------------------------------*/
+  // imported using partials/header-footer.scss
 }
 
 /*-----------------------------------*/
@@ -520,6 +433,9 @@ footer {
   * {
     outline: 1px solid green;
   }
+  body .hero {
+    background-size: 70%;
+  }
   body .hero .left {
     width: 50%;
   }
@@ -578,7 +494,7 @@ footer {
     text-align: right;
   }
   .subFooter {
-    margin-top: 6%;
+    margin-top: 2%;
   }
 }
 
@@ -587,11 +503,29 @@ footer {
   * {
     outline: 1px solid yellow;
   }
+  body .hero .left h1 {
+    font-size: 4.83rem;
+  }
+  body .hero .left a {
+    font-size: 1rem;
+  }
+  body .categories .categoriesWrapper div {
+    width: 30%;
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media screen and (min-width: 1400px) {
   * {
     outline: 1px solid blue;
+  }
+  body .hero .left h1 {
+    font-size: 5.78rem;
+  }
+  body .hero .left a {
+    font-size: 1.3rem;
+  }
+  body .categories .categoriesWrapper div {
+    width: 30%;
   }
 }
