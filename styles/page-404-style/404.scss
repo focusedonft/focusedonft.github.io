@@ -1,0 +1,96 @@
+@use "../partials/variables";
+@use "../partials/mixins";
+@use "../partials/basic-tags";
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  .wrapper {
+    padding: 5%;
+    height: 90%;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include mixins.flexbox(
+      $flexDirection: column,
+      $justifyContent: space-around,
+      $alignItems: stretch
+    );
+    z-index: 10;
+    text-align: center;
+
+    lottie-player {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -100;
+    }
+    p {
+      font-size: 1.3rem;
+      font-weight: 200;
+      color: variables.$color-primary;
+      width: 100%;
+      text-shadow: variables.$custom-box-shadow;
+    }
+    h1 {
+      font-size: 6rem;
+      font-weight: 700;
+      color: variables.$color-primary;
+      width: 100%;
+
+      text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+        0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+        0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+        0 20px 20px rgba(0, 0, 0, 0.15);
+    }
+    .callToActionWrapper {
+      @include mixins.flexbox($flexDirection: column, $gap: 15%);
+      width: 100%;
+      height: 25%;
+      a {
+        @include mixins.callToAction($importance: 1);
+        font-size: 0.9em;
+      }
+      a:nth-of-type(2) {
+        @include mixins.callToAction($importance: 2);
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media screen and (min-width: 768px) {
+  body .wrapper h1 {
+    font-size: 13rem;
+  }
+  body .wrapper .callToActionWrapper {
+    flex-direction: row;
+    gap: 10%;
+  }
+  body .wrapper .callToActionWrapper a,
+  body .wrapper .callToActionWrapper a:nth-of-type(2) {
+    width: 45%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media screen and (min-width: 992px) {
+  body .wrapper h1 {
+    font-size: 17rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body .wrapper h1 {
+    font-size: 18rem;
+  }
+  body .wrapper .callToActionWrapper a,
+  body .wrapper .callToActionWrapper a:nth-of-type(2) {
+    font-size: 1.2em;
+  }
+}
