@@ -150,6 +150,11 @@ html {
   text-rendering: optimizeSpeed;
   image-rendering: auto;
   shape-rendering: geometricPrecision;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  display: none;
 }
 html body {
   font-family: "Sora", sans-serif;

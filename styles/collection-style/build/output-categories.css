@@ -151,6 +151,11 @@ html body {
   color: rgb(251, 244, 255);
   text-shadow: 4px 24px 60px rgba(27, 27, 27, 0.25);
   cursor: default;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html body::-webkit-scrollbar {
+  display: none;
 }
 
 /**
