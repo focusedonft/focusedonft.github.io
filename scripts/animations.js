@@ -24,53 +24,124 @@ gsap.fromTo(
   { yPercent: 0, opacity: 1, duration: 2, ease: "power4.out" }
 );
 
-let tl = gsap.timeline({
+let timelineGallery = gsap.timeline({
   scrollTrigger: {
-    trigger: ".gallery",
+    trigger: "#galleryBreakpoint",
     markers: true,
     start: "-20%",
-    end: "0%",
+    end: "-15%",
   },
 });
-let tl2 = gsap.timeline({
+timelineGallery
+  .fromTo(
+    ".gallery h3",
+    { yPercent: -30, opacity: 0 },
+    { yPercent: 0, opacity: 1 }
+  )
+  .fromTo(".mySlides .primaryInfo", { opacity: 0 }, { opacity: 1 })
+  .fromTo(".mySlides figure", { opacity: 0 }, { opacity: 1 })
+  .fromTo(".mySlides .secondaryInfo", { opacity: 0 }, { opacity: 1 });
+
+let timelineCollections = gsap.timeline({
   scrollTrigger: {
-    trigger: ".categories",
+    trigger: "#collectionBreakpoint",
     markers: true,
     start: "-20%",
-    end: "0%",
+    end: "-15%",
   },
 });
-let tl3 = gsap.timeline({
+timelineCollections
+  .fromTo(
+    ".categories h3",
+    { yPercent: -30, opacity: 0 },
+    { yPercent: 0, opacity: 1 }
+  )
+  .fromTo(
+    ".categoriesWrapper div",
+    { yPercent: -20, opacity: 0 },
+    { yPercent: 0, opacity: 1, stagger: 0.3 }
+  )
+  .fromTo(
+    ".categoriesWrapper div h4",
+    { yPercent: -20, opacity: 0 },
+    { yPercent: 0, opacity: 1 }
+  )
+  .fromTo(
+    ".categoriesWrapper div figure",
+    { yPercent: -20, opacity: 0 },
+    { yPercent: 0, opacity: 1 }
+  )
+  .fromTo(
+    ".categoriesWrapper div a",
+    { yPercent: -20, opacity: 0 },
+    { yPercent: 0, opacity: 1, stagger: 0.3 }
+  );
+
+let timelineProjectExplained = gsap.timeline({
   scrollTrigger: {
-    trigger: ".projectExplained",
+    trigger: "#projectBreakpoint",
     markers: true,
     start: "-20%",
-    end: "0%",
+    end: "-15%",
   },
 });
-tl.addLabel("start")
-  .from(".gallery h3", { yPercent: -30, opacity: 0 })
-  .addLabel("end")
-  .to(".gallery h3", {
-    yPercent: 0,
-    opacity: 1,
-    duration: 9,
-  });
-tl2
-  .addLabel("start")
-  .from(".categories h3", { yPercent: -30, opacity: 0 })
-  .addLabel("end")
-  .to(".categories h3", {
-    yPercent: 0,
-    opacity: 1,
-    duration: 9,
-  });
-tl3
-  .addLabel("start")
-  .from(".projectExplained h3", { yPercent: -30, opacity: 0 })
-  .addLabel("end")
-  .to(".projectExplained h3", {
-    yPercent: 0,
-    opacity: 1,
-    duration: 9,
-  });
+timelineProjectExplained
+  .fromTo(
+    ".projectExplained h3",
+    { yPercent: -30, opacity: 0 },
+    { yPercent: 0, opacity: 1 }
+  )
+  .fromTo(
+    "#projectWrapper .explanation",
+    { yPercent: -10, opacity: 0 },
+    { yPercent: 0, opacity: 1 }
+  )
+  .fromTo(
+    "#projectWrapper .roadmap",
+    { yPercent: -10, opacity: 0 },
+    { yPercent: 0, opacity: 1, stagger: 0.3 }
+  )
+  .fromTo(
+    "#projectWrapper .roadmap p",
+    { yPercent: -10, opacity: 0 },
+    { yPercent: 0, opacity: 1, duration: 0.5 }
+  )
+  .from(
+    "#projectWrapper .roadmap  span",
+
+    { width: 0, duration: 0.5, opacity: 1, stagger: 0.3 }
+  );
+let timelineCollectionCards = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".cardsContainer",
+    markers: true,
+    start: "-20%",
+    end: "-15%",
+  },
+});
+timelineCollectionCards
+  .fromTo("h1", { yPercent: -30, opacity: 0 }, { yPercent: 0, opacity: 1 })
+  .fromTo(".card", { yPercent: -20, opacity: 0 }, { yPercent: 0, opacity: 1 })
+  .fromTo(
+    ".card img",
+    { yPercent: -20, opacity: 0 },
+    { yPercent: 0, opacity: 1 }
+  )
+  .fromTo(
+    ".card h2",
+    { yPercent: -20, opacity: 0 },
+    { yPercent: 0, opacity: 1 }
+  )
+  .fromTo(".card p", { yPercent: -20, opacity: 0 }, { yPercent: 0, opacity: 1 })
+  .fromTo(
+    ".card a",
+    { yPercent: 40, opacity: 0 },
+    {
+      yPercent: 0,
+      opacity: 1,
+      duration: 0.5,
+      duration: 0.5,
+      ease: "power4.in",
+      stagger: 0.3,
+    }
+  );
