@@ -4,9 +4,9 @@
 @use "../styles/partials/header-footer";
 @use "../styles/partials/basic-tags";
 @use "../styles/partials/keyframes";
-* {
-  outline: 1px solid white;
-}
+// * {
+//   outline: 1px solid white;
+// }
 
 body {
   font-size: 16px;
@@ -364,9 +364,9 @@ body {
 
 // Small devices (landscape phones, 576px and up)
 @media screen and (min-width: 576px) {
-  * {
-    outline: variables.$outline-test;
-  }
+  // * {
+  //   outline: variables.$outline-test;
+  // }
   body .hero .left h1 {
     font-size: 5rem;
   }
@@ -390,9 +390,9 @@ body {
 
 // Medium devices (tablets, 768px and up)
 @media screen and (min-width: 768px) {
-  * {
-    outline: 1px solid aqua;
-  }
+  // * {
+  //   outline: 1px solid aqua;
+  // }
   body header nav {
     font-size: 2.8rem;
   }
@@ -443,9 +443,9 @@ body {
 
 // Large devices (desktops, 992px and up)
 @media screen and (min-width: 992px) {
-  * {
-    outline: 1px solid green;
-  }
+  // * {
+  //   outline: 1px solid green;
+  // }
   body header nav {
     font-size: 3rem;
   }
@@ -516,9 +516,9 @@ body {
 
 // X-Large devices (large desktops, 1200px and up)
 @media screen and (min-width: 1200px) {
-  * {
-    outline: 1px solid yellow;
-  }
+  // * {
+  //   outline: 1px solid yellow;
+  // }
   body header nav {
     font-size: 3.2rem;
   }
@@ -538,9 +538,9 @@ body {
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media screen and (min-width: 1400px) {
-  * {
-    outline: 1px solid blue;
-  }
+  // * {
+  //   outline: 1px solid blue;
+  // }
   body header nav {
     font-size: 3.5rem;
   }
