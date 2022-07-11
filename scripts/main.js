@@ -54,3 +54,21 @@ var liveprice = {
 $.ajax(liveprice).done(function (response) {
   eth.innerHTML = response.ethereum.usd + " USD";
 });
+
+// SCRIPT FOR COMING SOON COLLECTIONS
+
+let card = document.querySelectorAll(".categoriesWrapper div");
+let cardText = document.querySelectorAll(".categoriesWrapper div h4");
+
+for (let i = 0; i < cardText.length; i++) {
+  if (cardText[i].textContent === "Coming Soon") {
+    card[i].style.filter = "opacity(0.5)";
+    card[i].style.pointerEvents = "None";
+  }
+  // TODO: Add a pop up message when the user clicks on the card
+  // card[i].addEventListener("click", () => {
+  //   if (cardText[i].textContent === "Coming Soon") {
+  //     console.log("This collection is not available yet");
+  //   }
+  // });
+}

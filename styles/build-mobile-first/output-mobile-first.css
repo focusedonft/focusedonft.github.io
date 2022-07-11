@@ -67,7 +67,7 @@ header nav {
   align-items: center;
   justify-content: center;
   gap: 0;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   transition: all 0.35s ease-in-out;
 }
 header nav ul {
@@ -414,7 +414,7 @@ body .gallery .slideshow-container .mySlides .primaryInfo a {
   width: 100%;
   color: rgb(110, 81, 158);
   background-color: rgb(251, 244, 255);
-  font-size: 0.9rem;
+  font-size: 0.75rem;
 }
 body .gallery .slideshow-container .mySlides .primaryInfo a:hover {
   box-shadow: 1px 1px 0px rgb(251, 244, 255), 2px 2px 0px rgb(251, 244, 255), 3px 3px 0px rgb(251, 244, 255), 4px 4px 0px rgb(251, 244, 255), 5px 5px 0px rgb(251, 244, 255), 6px 6px 0px rgb(251, 244, 255), 7px 7px 0px rgb(251, 244, 255), 8px 8px 0px rgb(251, 244, 255), 9px 9px 0px rgb(251, 244, 255);
@@ -432,7 +432,7 @@ body .gallery .slideshow-container .mySlides .secondaryInfo {
   width: 49%;
 }
 body .gallery .slideshow-container .mySlides .secondaryInfo table {
-  width: 100%;
+  width: 98%;
 }
 body .gallery .dotWrapper {
   text-align: center;
@@ -491,6 +491,10 @@ body .categories .categoriesWrapper div {
   border: 1px solid rgba(255, 255, 255, 0.125);
   border-radius: 25px;
   padding: 30px;
+  margin-bottom: 5%;
+}
+body .categories .categoriesWrapper div:last-child {
+  margin-bottom: 0;
 }
 body .categories .categoriesWrapper div h4 {
   font-size: 2em;
@@ -509,6 +513,7 @@ body .categories .categoriesWrapper div a {
   width: 100%;
   color: rgb(110, 81, 158);
   background-color: rgb(251, 244, 255);
+  font-size: 0.9rem;
   margin-bottom: 5%;
 }
 body .categories .categoriesWrapper div a:hover {
@@ -527,14 +532,12 @@ body .categories .categoriesWrapper div a:nth-of-type(2) {
   background-color: rgb(110, 81, 158);
   color: rgb(251, 244, 255);
   border: 2px solid rgb(251, 244, 255);
+  font-size: 0.9rem;
   margin-bottom: 0px;
 }
 body .categories .categoriesWrapper div a:nth-of-type(2):hover {
   background-color: rgb(251, 244, 255);
   color: rgb(110, 81, 158);
-}
-body .categories .categoriesWrapper div:nth-child(2) {
-  margin: 5% 0;
 }
 body .categories .categoriesWrapper img {
   width: 100%;
@@ -659,7 +662,7 @@ body .projectExplained .roadmap .point:nth-of-type(7) span {
     font-size: 5rem;
   }
   body .hero .left a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   body .gallery .slideshow-container .mySlides figure {
     width: 77.6%;
@@ -679,11 +682,17 @@ body .categories .categoriesWrapper div a:nth-of-type(2) {
   * {
     outline: 1px solid aqua;
   }
+  body header nav {
+    font-size: 2.8rem;
+  }
   body .hero .left h1 {
     font-size: 5rem;
   }
   body .gallery .slideshow-container .mySlides figure {
     width: 60.4%;
+  }
+  body .categories .categoriesWrapper div:nth-last-child(2) {
+    margin-bottom: 0;
   }
   body .categories .categoriesWrapper {
     gap: 5%;
@@ -723,6 +732,9 @@ body .categories .categoriesWrapper div a:nth-of-type(2) {
 @media screen and (min-width: 992px) {
   * {
     outline: 1px solid green;
+  }
+  body header nav {
+    font-size: 3rem;
   }
   body .hero {
     background-size: 70%;
@@ -791,11 +803,17 @@ body .projectExplained .roadmap {
   * {
     outline: 1px solid yellow;
   }
+  body header nav {
+    font-size: 3.2rem;
+  }
   body .hero .left h1 {
     font-size: 4.83rem;
   }
   body .hero .left a {
     font-size: 1rem;
+  }
+  body .categories .categoriesWrapper div:nth-last-child(3) {
+    margin-bottom: 0;
   }
   body .categories .categoriesWrapper div {
     width: 30%;
@@ -805,11 +823,14 @@ body .projectExplained .roadmap {
   * {
     outline: 1px solid blue;
   }
+  body header nav {
+    font-size: 3.5rem;
+  }
   body .hero .left h1 {
     font-size: 5.78rem;
   }
   body .hero .left a {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   body .categories .categoriesWrapper div {
     width: 30%;
