@@ -102,6 +102,13 @@ footer {
   background-color: rgba(107, 108, 112, 0.64);
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
+footer a {
+  color: rgb(251, 244, 255);
+  text-shadow: 2px 3px 5px rgba(76, 76, 76, 0.5);
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
 footer .spanWrapper {
   width: 100%;
   display: flex;
@@ -116,7 +123,9 @@ footer .spanWrapper span {
   display: block;
 }
 footer .spanWrapper span p {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 footer .spanWrapper span ul li {
   list-style-type: none;
@@ -222,10 +231,6 @@ html body {
     transform: rotate(360deg);
   }
 }
-* {
-  outline: 1px solid white;
-}
-
 body {
   font-size: 16px;
   /* ----------------------------------- */
@@ -655,9 +660,6 @@ body .projectExplained .roadmap .point:nth-of-type(7) span {
 /*  @block Responsive
 /*-----------------------------------*/
 @media screen and (min-width: 576px) {
-  * {
-    outline: 1px solid red;
-  }
   body .hero .left h1 {
     font-size: 5rem;
   }
@@ -679,9 +681,6 @@ body .categories .categoriesWrapper div a:nth-of-type(2) {
   }
 }
 @media screen and (min-width: 768px) {
-  * {
-    outline: 1px solid aqua;
-  }
   body header nav {
     font-size: 2.8rem;
   }
@@ -730,9 +729,6 @@ body .categories .categoriesWrapper div a:nth-of-type(2) {
   }
 }
 @media screen and (min-width: 992px) {
-  * {
-    outline: 1px solid green;
-  }
   body header nav {
     font-size: 3rem;
   }
@@ -760,7 +756,7 @@ body .categories .categoriesWrapper div a:nth-of-type(2) {
   }
   body .gallery {
     height: 70vh;
-    flex-direction: column;
+    flex-direction: row;
   }
   body .gallery .slideshow-container .mySlides {
     height: auto;
@@ -800,9 +796,6 @@ body .projectExplained .roadmap {
   }
 }
 @media screen and (min-width: 1200px) {
-  * {
-    outline: 1px solid yellow;
-  }
   body header nav {
     font-size: 3.2rem;
   }
@@ -820,9 +813,6 @@ body .projectExplained .roadmap {
   }
 }
 @media screen and (min-width: 1400px) {
-  * {
-    outline: 1px solid blue;
-  }
   body header nav {
     font-size: 3.5rem;
   }

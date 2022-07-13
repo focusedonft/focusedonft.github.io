@@ -27,7 +27,7 @@ gsap.fromTo(
 let timelineGallery = gsap.timeline({
   scrollTrigger: {
     trigger: "#galleryBreakpoint",
-    markers: true,
+    // markers: true,
     start: "-20%",
     end: "-15%",
   },
@@ -45,7 +45,7 @@ timelineGallery
 let timelineCollections = gsap.timeline({
   scrollTrigger: {
     trigger: "#collectionBreakpoint",
-    markers: true,
+    // markers: true,
     start: "-20%",
     end: "-15%",
   },
@@ -80,7 +80,7 @@ timelineCollections
 let timelineProjectExplained = gsap.timeline({
   scrollTrigger: {
     trigger: "#projectBreakpoint",
-    markers: true,
+    // markers: true,
     start: "-20%",
     end: "-15%",
   },
@@ -114,7 +114,7 @@ timelineProjectExplained
 let timelineCollectionCards = gsap.timeline({
   scrollTrigger: {
     trigger: ".cardsContainer",
-    markers: true,
+    // markers: true,
     start: "-20%",
     end: "-15%",
   },
