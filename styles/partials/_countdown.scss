@@ -1,0 +1,28 @@
+@use "../partials/mixins";
+
+/* ----------------------------------- */
+/* @block Countdown */
+/* ----------------------------------- */
+aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  z-index: 100;
+  .countdown {
+    @include mixins.flexbox();
+    font-size: 1rem;
+    text-align: center;
+    p {
+      display: inline-block;
+      &:nth-child(1) {
+        font-weight: 500;
+      }
+      &:nth-child(2) {
+        font-weight: 100;
+      }
+    }
+  }
+}

@@ -1,0 +1,463 @@
+/**
+* _variables.scss
+*
+* Module for variables
+*/
+/**
+* _mixins.scss
+*
+* Module for mixins
+*/
+/*-----------------------------------*/
+/*  @block Call To Actions 
+/*-----------------------------------*/
+/*-----------------------------------*/
+/*  @block Flexbox
+/*-----------------------------------*/
+/**
+* _extends.scss
+*
+* Module for extends
+*/
+/*-----------------------------------*/
+/*  @block Sections
+  /*-----------------------------------*/
+header {
+  position: absolute;
+}
+header ul,
+header ol {
+  list-style-type: none;
+}
+header a {
+  text-decoration: none;
+  color: rgb(251, 244, 255);
+  text-shadow: 2px 3px 5px rgba(76, 76, 76, 0.5);
+}
+header #hamburger-menu {
+  color: rgb(251, 244, 255);
+  position: absolute;
+  top: 7%;
+  right: 10.4%;
+  z-index: 200;
+  transform: translate(-10.4%, -7%);
+  transform: scale(1.7);
+  transition: all 0.35s ease-in-out;
+}
+header #hamburger-menu:hover {
+  transform: scale(2);
+}
+header nav {
+  background-color: rgb(110, 81, 158);
+  position: relative;
+  z-index: 99;
+  visibility: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  font-size: 2.5rem;
+  transition: all 0.35s ease-in-out;
+}
+header nav ul {
+  width: max-content;
+}
+header nav ul li {
+  font-weight: bold;
+  text-align: left;
+  padding: 0.5rem 0;
+}
+header nav ul li ol {
+  text-indent: 10%;
+}
+header nav ul li ol li {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+footer {
+  margin-top: 40%;
+  padding: 5% 10% 2%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  text-align: left;
+  backdrop-filter: blur(17px) saturate(186%);
+  -webkit-backdrop-filter: blur(17px) saturate(186%);
+  background-color: rgba(107, 108, 112, 0.64);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+footer a {
+  color: rgb(251, 244, 255);
+  text-shadow: 2px 3px 5px rgba(76, 76, 76, 0.5);
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+footer .spanWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0%;
+}
+footer .spanWrapper span {
+  width: 100%;
+  display: block;
+}
+footer .spanWrapper span p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+footer .spanWrapper span ul li {
+  list-style-type: none;
+}
+footer .spanWrapper span:nth-child(2) {
+  margin: 10% 0;
+}
+
+.subFooter {
+  width: 100%;
+  margin-top: 20%;
+}
+
+/**
+* _basic-tags.scss
+*
+* Module for the tags that will be repeated in all the pages
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  image-rendering: auto;
+  shape-rendering: geometricPrecision;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+html body {
+  font-family: "Sora", sans-serif;
+  width: 100%;
+  background-color: rgb(110, 81, 158);
+  color: rgb(251, 244, 255);
+  text-shadow: 4px 24px 60px rgba(27, 27, 27, 0.25);
+  cursor: default;
+}
+
+/**
+* _keyframes.scss
+*
+* Module for keyframes
+*/
+@keyframes down {
+  0% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*NOT USED*/
+@keyframes circularLoop {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* ----------------------------------- */
+/* @block Countdown */
+/* ----------------------------------- */
+aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 100;
+}
+aside .countdown {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  font-size: 1rem;
+  text-align: center;
+}
+aside .countdown p {
+  display: inline-block;
+}
+aside .countdown p:nth-child(1) {
+  font-weight: 500;
+}
+aside .countdown p:nth-child(2) {
+  font-weight: 100;
+}
+
+/*-----------------------------------*/
+/*  @block Responsive
+/*-----------------------------------*/
+@media screen and (min-width: 576px) {
+  body .hero .left h1 {
+    font-size: 5rem;
+  }
+  body .hero .left a {
+    font-size: 1rem;
+  }
+  body .gallery .slideshow-container .mySlides figure {
+    width: 77.6%;
+  }
+  body .categories .categoriesWrapper div a,
+body .categories .categoriesWrapper div a:nth-of-type(2) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 45%;
+    float: left;
+  }
+  body .categories .categoriesWrapper div a:nth-of-type(2) {
+    margin-left: 10%;
+  }
+}
+@media screen and (min-width: 768px) {
+  body header nav {
+    font-size: 2.8rem;
+  }
+  body .hero .left h1 {
+    font-size: 5rem;
+  }
+  body .gallery .slideshow-container .mySlides figure {
+    width: 60.4%;
+  }
+  body .categories .categoriesWrapper div:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+  body .categories .categoriesWrapper {
+    gap: 5%;
+  }
+  body .categories .categoriesWrapper div {
+    width: 47.5%;
+  }
+  body .categories .categoriesWrapper div a,
+body .categories .categoriesWrapper div a:nth-of-type(2) {
+    width: 100%;
+  }
+  body .categories .categoriesWrapper div a:nth-of-type(2) {
+    margin: 0.4rem 0 0;
+  }
+  body .projectExplained #projectWrapper .explanation a {
+    margin-top: 3rem;
+  }
+  body .projectExplained #projectWrapper .explanation {
+    margin-bottom: 18%;
+  }
+  footer {
+    margin-top: 25%;
+  }
+  footer .spanWrapper span {
+    width: 33.3%;
+  }
+  footer .subFooter {
+    text-align: center;
+  }
+  footer .spanWrapper {
+    align-items: stretch;
+  }
+  footer .spanWrapper span:nth-child(2) {
+    margin: 0%;
+  }
+}
+@media screen and (min-width: 992px) {
+  body header nav {
+    font-size: 3rem;
+  }
+  body .hero {
+    background-size: 70%;
+  }
+  body .hero .left {
+    width: 50%;
+  }
+  body .hero .left h1 {
+    font-size: 3.974rem;
+  }
+  body .hero .left a {
+    font-size: 0.85rem;
+  }
+  body .hero .right {
+    width: 50%;
+    height: 100%;
+  }
+  body .hero .right p {
+    display: initial;
+    position: absolute;
+    top: 93%;
+    right: 8.3%;
+  }
+  body .gallery {
+    height: 70vh;
+    flex-direction: row;
+  }
+  body .gallery .slideshow-container .mySlides {
+    height: auto;
+  }
+  body .gallery .slideshow-container .mySlides .primaryInfo,
+body .gallery .slideshow-container .mySlides .secondaryInfo {
+    width: 25%;
+  }
+  body .gallery .slideshow-container .mySlides figure {
+    width: 46%;
+    order: 2;
+  }
+  body .projectExplained #projectWrapper {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  body .projectExplained .roadmap h4,
+body .projectExplained .roadmap .point {
+    margin-left: 3%;
+  }
+  body .projectExplained #projectWrapper .explanation,
+body .projectExplained .roadmap {
+    width: 50%;
+    margin: 0%;
+  }
+  footer {
+    margin-top: 20%;
+  }
+  footer .spanWrapper span:nth-child(2) {
+    text-align: center;
+  }
+  footer .spanWrapper span:nth-child(3) {
+    text-align: right;
+  }
+  .subFooter {
+    margin-top: 2%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body header nav {
+    font-size: 3.2rem;
+  }
+  body .hero .left h1 {
+    font-size: 4.83rem;
+  }
+  body .hero .left a {
+    font-size: 1rem;
+  }
+  body .categories .categoriesWrapper div:nth-last-child(3) {
+    margin-bottom: 0;
+  }
+  body .categories .categoriesWrapper div {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  body header nav {
+    font-size: 3.5rem;
+  }
+  body .hero .left h1 {
+    font-size: 5.78rem;
+  }
+  body .hero .left a {
+    font-size: 1.1rem;
+  }
+  body .categories .categoriesWrapper div {
+    width: 30%;
+  }
+}
+* {
+  outline: 1px solid red;
+}
+
+body .mainWrapper {
+  padding: 0 10%;
+  margin-top: 73px;
+}
+body .mainWrapper h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+body .mainWrapper h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+body .mainWrapper nav {
+  backdrop-filter: blur(17px) saturate(186%);
+  -webkit-backdrop-filter: blur(17px) saturate(186%);
+  background-color: rgba(107, 108, 112, 0.64);
+}
+body .mainWrapper nav ul {
+  list-style-type: none;
+}
+body .mainWrapper h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+body .mainWrapper p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/*# sourceMappingURL=output-about-the-project.css.map */
