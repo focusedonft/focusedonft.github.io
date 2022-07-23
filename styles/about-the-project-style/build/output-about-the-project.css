@@ -264,7 +264,7 @@ body .mainWrapper {
   padding: 0 10%;
 }
 body .mainWrapper section {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -274,11 +274,11 @@ body .mainWrapper section {
   gap: 2%;
 }
 body .mainWrapper section h1 {
-  font-size: 2.1rem;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 body .mainWrapper section h2 {
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 body .mainWrapper nav {
@@ -298,14 +298,15 @@ body .mainWrapper nav ul li a {
   color: rgb(251, 244, 255);
 }
 body .mainWrapper h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 body .mainWrapper p {
   font-size: 1.1rem;
+  font-weight: 300;
   line-height: 1.5;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 /*# sourceMappingURL=output-about-the-project.css.map */
