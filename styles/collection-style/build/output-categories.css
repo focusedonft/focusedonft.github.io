@@ -299,7 +299,7 @@ body .cardsContainer {
 body .cardsContainer .card {
   text-shadow: 2px 3px 5px rgba(76, 76, 76, 0.5);
   width: 100%;
-  height: auto;
+  height: max-content;
   position: relative;
   padding: 2rem;
   margin: 10px;
@@ -313,9 +313,12 @@ body .cardsContainer .card img {
   width: 100%;
 }
 body .cardsContainer .card h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 2% 0 5%;
+}
+body .cardsContainer .card p {
+  font-weight: 200;
 }
 body .cardsContainer .card a {
   margin-top: 15%;
@@ -345,6 +348,9 @@ body .cardsContainer .card a:hover {
   * {
     outline: 1px solid red;
   }
+  body .cardsContainer .card {
+    width: 45.7%;
+  }
 }
 @media screen and (min-width: 768px) {
   * {
@@ -352,6 +358,9 @@ body .cardsContainer .card a:hover {
   }
   body .cardsContainer .card {
     width: 46.6%;
+  }
+  body .cardsContainer .card h2 {
+    font-size: 1.2rem;
   }
   body footer {
     margin-top: 25%;
@@ -377,7 +386,7 @@ body .cardsContainer .card a:hover {
     width: 30.7%;
   }
   body .cardsContainer .card h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   body .cardsContainer .card a {
     font-size: 0.9rem;
@@ -400,10 +409,10 @@ body .cardsContainer .card a:hover {
     outline: 1px solid yellow;
   }
   body .cardsContainer .card h2 {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
   body .cardsContainer .card a {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -414,10 +423,7 @@ body .cardsContainer .card a:hover {
     width: 23%;
   }
   body .cardsContainer .card h2 {
-    font-size: 1.8rem;
-  }
-  body .cardsContainer .card a {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
