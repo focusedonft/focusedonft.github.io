@@ -2,6 +2,7 @@ let hamburger = document.getElementById("hamburger-menu");
 let navElement = document.getElementsByTagName("nav")[0];
 let dropdown = document.querySelector("nav ul li:nth-child(3) ol");
 let triggerForClosing = document.querySelector("nav ul:not(ol)");
+let body = document.querySelector("body");
 
 hamburger.addEventListener("click", () => {
   if (navElement.style.visibility === "hidden") {
@@ -63,12 +64,13 @@ let cardText = document.querySelectorAll(".categoriesWrapper div h4");
 for (let i = 0; i < cardText.length; i++) {
   if (cardText[i].textContent === "Coming Soon") {
     card[i].style.filter = "opacity(0.5)";
-    card[i].style.pointerEvents = "None";
+    cardText[i].style.margin = "0px";
+    cardText[i].style.fontSize = "3em";
   }
   // TODO: Add a pop up message when the user clicks on the card
-  // card[i].addEventListener("click", () => {
-  //   if (cardText[i].textContent === "Coming Soon") {
-  //     console.log("This collection is not available yet");
-  //   }
-  // });
+  card[i].addEventListener("mouseHover", () => {
+    if (cardText[i].textContent === "Coming Soon") {
+      console.log("This collection is not available yet");
+    }
+  });
 }

@@ -219,15 +219,6 @@ html .mainWrapper {
     opacity: 1;
   }
 }
-/*NOT USED*/
-@keyframes circularLoop {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 /* ----------------------------------- */
 /* @block Countdown */
 /* ----------------------------------- */
@@ -263,7 +254,7 @@ aside .countdown p:nth-child(2) {
 body .mainWrapper {
   padding: 0 10%;
 }
-body .mainWrapper section {
+body .mainWrapper section:nth-of-type(1) {
   height: 80vh;
   width: 100%;
   display: flex;
@@ -273,13 +264,16 @@ body .mainWrapper section {
   justify-content: center;
   gap: 2%;
 }
-body .mainWrapper section h1 {
+body .mainWrapper section:nth-of-type(1) h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
-body .mainWrapper section h2 {
+body .mainWrapper section:nth-of-type(1) h2 {
   font-size: 2rem;
   font-weight: 400;
+}
+body .mainWrapper p {
+  font-size: 1.5rem;
 }
 body .mainWrapper nav {
   margin: 2rem 0;
@@ -297,16 +291,57 @@ body .mainWrapper nav ul li a {
   text-decoration: none;
   color: rgb(251, 244, 255);
 }
-body .mainWrapper h3 {
+body .mainWrapper .contentWrapper {
+  outline: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+body .mainWrapper .contentWrapper div {
+  width: 100%;
+  outline: 1px solid red;
+  margin: 2rem 0;
+}
+body .mainWrapper .contentWrapper div h3 {
   font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 1.2rem;
+  margin-bottom: 3rem;
 }
-body .mainWrapper p {
+body .mainWrapper .contentWrapper div p {
   font-size: 1.1rem;
   font-weight: 300;
   line-height: 1.5;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
+}
+body .mainWrapper .contentWrapper div p a {
+  color: rgb(251, 244, 255);
+}
+body .mainWrapper .contentWrapper div p strong {
+  font-weight: 600;
+}
+body .mainWrapper .contentWrapper div .lastAnchor {
+  text-decoration: none;
+  font-weight: 800;
+  transition: all 0.5s ease;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.1em;
+  border-radius: 108px;
+  padding: 13px 24px;
+  width: 100%;
+  background-color: rgb(110, 81, 158);
+  text-decoration: underline;
+  color: rgb(251, 244, 255);
+  font-size: 1rem;
+  text-align: left;
+  padding: 0px;
+  margin-top: 2.3rem;
+}
+body .mainWrapper .contentWrapper div .lastAnchor:hover {
+  transform: translateX(10px);
 }
 
 /*# sourceMappingURL=output-about-the-project.css.map */

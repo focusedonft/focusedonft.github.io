@@ -48,13 +48,3 @@
     opacity: 1;
   }
 }
-//keyframe used for circle loop
-/*NOT USED*/
-@keyframes circularLoop {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

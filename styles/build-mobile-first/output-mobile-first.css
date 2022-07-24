@@ -226,15 +226,6 @@ html .mainWrapper {
     opacity: 1;
   }
 }
-/*NOT USED*/
-@keyframes circularLoop {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 /* ----------------------------------- */
 /* @block Countdown */
 /* ----------------------------------- */
@@ -301,7 +292,7 @@ body .hero {
   align-items: center;
   justify-content: center;
   gap: 0%;
-  margin-bottom: 5%;
+  margin-bottom: 7%;
   /*-----------------------------------*/
   /*  @block LEFT Hero Section
   /*-----------------------------------*/
@@ -373,7 +364,7 @@ body p {
 }
 body h3 {
   font-size: 2.5rem;
-  margin-bottom: 2.5rem;
+  padding-bottom: 3rem;
 }
 body .gallery {
   display: flex;
@@ -422,7 +413,7 @@ body .gallery .slideshow-container .mySlides .primaryInfo a {
   width: 100%;
   color: rgb(110, 81, 158);
   background-color: rgb(251, 244, 255);
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 body .gallery .slideshow-container .mySlides .primaryInfo a:hover {
   box-shadow: 1px 1px 0px rgb(251, 244, 255), 2px 2px 0px rgb(251, 244, 255), 3px 3px 0px rgb(251, 244, 255), 4px 4px 0px rgb(251, 244, 255), 5px 5px 0px rgb(251, 244, 255), 6px 6px 0px rgb(251, 244, 255), 7px 7px 0px rgb(251, 244, 255), 8px 8px 0px rgb(251, 244, 255), 9px 9px 0px rgb(251, 244, 255);
@@ -441,11 +432,15 @@ body .gallery .slideshow-container .mySlides .secondaryInfo {
 }
 body .gallery .slideshow-container .mySlides .secondaryInfo table {
   width: 98%;
+  text-align: center;
+}
+body .gallery .slideshow-container .mySlides .secondaryInfo table th {
+  padding: 5px;
 }
 body .gallery .dotWrapper {
   text-align: center;
   position: absolute;
-  bottom: 5%;
+  bottom: 0%;
   height: auto;
 }
 body .gallery .dot {
@@ -479,7 +474,7 @@ body .categories {
   align-items: center;
   justify-content: center;
   gap: 0%;
-  margin: 5% 0 10%;
+  margin: 10% 0%;
   text-align: center;
   position: relative;
 }
@@ -546,6 +541,15 @@ body .categories .categoriesWrapper div a:nth-of-type(2) {
 body .categories .categoriesWrapper div a:nth-of-type(2):hover {
   background-color: rgb(251, 244, 255);
   color: rgb(110, 81, 158);
+}
+body .categories .categoriesWrapper div p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 900%;
+  opacity: 0.5;
+  z-index: -10;
 }
 body .categories .categoriesWrapper img {
   width: 100%;
