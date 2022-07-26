@@ -81,12 +81,17 @@ footer {
       width: 100%;
       display: block;
       p {
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: bold;
         margin-bottom: 10px;
+        letter-spacing: 0.05rem;
       }
       ul li {
         list-style-type: none;
+        padding: 3px 0;
+        ol {
+          font-weight: 200;
+        }
       }
       &:nth-child(2) {
         margin: 10% 0;

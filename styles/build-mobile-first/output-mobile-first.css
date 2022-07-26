@@ -123,12 +123,17 @@ footer .spanWrapper span {
   display: block;
 }
 footer .spanWrapper span p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
+  letter-spacing: 0.05rem;
 }
 footer .spanWrapper span ul li {
   list-style-type: none;
+  padding: 3px 0;
+}
+footer .spanWrapper span ul li ol {
+  font-weight: 200;
 }
 footer .spanWrapper span:nth-child(2) {
   margin: 10% 0;
@@ -313,7 +318,7 @@ body .hero .left {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 0%;
 }
@@ -579,26 +584,19 @@ body .projectExplained #projectWrapper {
 }
 body .projectExplained #projectWrapper h4 {
   font-size: 2em;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 body .projectExplained #projectWrapper .explanation {
   width: 100%;
+  padding-right: 100px;
   text-align: left;
   margin-bottom: 30%;
 }
-body .projectExplained #projectWrapper .explanation h2,
-body .projectExplained #projectWrapper .explanation h3 {
-  display: inline-block;
-  font-size: 1em;
-  font-weight: 500;
-  margin-bottom: auto;
-}
-body .projectExplained #projectWrapper .explanation span {
+body .projectExplained #projectWrapper .explanation p {
   line-height: 1.8rem;
 }
-body .projectExplained #projectWrapper .explanation span span:nth-child(1) {
-  margin-bottom: 1.2rem;
-  display: inline-block;
+body .projectExplained #projectWrapper .explanation p:nth-of-type(2) {
+  margin-top: 2rem;
 }
 body .projectExplained #projectWrapper .explanation a {
   text-decoration: none;
@@ -642,25 +640,25 @@ body .projectExplained .roadmap .point {
   margin-left: 0;
 }
 body .projectExplained .roadmap .point:nth-of-type(1) span {
-  width: 20%;
+  width: 0%;
 }
 body .projectExplained .roadmap .point:nth-of-type(2) span {
-  width: 48%;
+  width: 0%;
 }
 body .projectExplained .roadmap .point:nth-of-type(3) span {
-  width: 63%;
+  width: 0%;
 }
 body .projectExplained .roadmap .point:nth-of-type(4) span {
-  width: 24%;
+  width: 0%;
 }
 body .projectExplained .roadmap .point:nth-of-type(5) span {
-  width: 57%;
+  width: 0%;
 }
 body .projectExplained .roadmap .point:nth-of-type(6) span {
-  width: 87%;
+  width: 0%;
 }
 body .projectExplained .roadmap .point:nth-of-type(7) span {
-  width: 20%;
+  width: 0%;
 }
 
 /*-----------------------------------*/
@@ -672,6 +670,7 @@ body .projectExplained .roadmap .point:nth-of-type(7) span {
   }
   body .hero .left a {
     font-size: 1rem;
+    width: 100%;
   }
   body .gallery .slideshow-container .mySlides figure {
     width: 77.6%;
@@ -693,6 +692,10 @@ body .categories .categoriesWrapper div a:nth-of-type(2) {
   }
   body .hero .left h1 {
     font-size: 5rem;
+  }
+  body .hero .left a {
+    font-size: 1rem;
+    width: 50%;
   }
   body .gallery .slideshow-container .mySlides figure {
     width: 60.4%;
@@ -750,6 +753,7 @@ body .categories .categoriesWrapper div a:nth-of-type(2) {
   }
   body .hero .left a {
     font-size: 0.85rem;
+    width: 100%;
   }
   body .hero .right {
     width: 50%;
@@ -811,6 +815,7 @@ body .projectExplained .roadmap {
   }
   body .hero .left a {
     font-size: 1rem;
+    width: 100%;
   }
   body .categories .categoriesWrapper div:nth-last-child(3) {
     margin-bottom: 0;
@@ -828,6 +833,7 @@ body .projectExplained .roadmap {
   }
   body .hero .left a {
     font-size: 1.1rem;
+    width: 80%;
   }
   body .categories .categoriesWrapper div {
     width: 30%;

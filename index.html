@@ -1,542 +1,705 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/build-mobile-first/output-mobile-first.css"
+    />
+    <title>FocusedoNFT</title>
+  </head>
+  <!-- oncontextmenu="return false" -->
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="images/favicon/site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./styles/build-mobile-first/output-mobile-first.css" />
-  <title>FocusedoNFT</title>
-</head>
-<!-- oncontextmenu="return false" -->
-
-<body>
-  <script src="./scripts/countdown.js"></script>
-  <aside>
-    <div class="countdown">
-      <div class="container-year">
-        <p class="year">Time</p>
-        <p>Years</p>
-      </div>
-      <div class="container-day">
-        <p class="day">Time</p>
-        <p>Days</p>
-      </div>
-      <div class="container-hour">
-        <p class="hour">Time</p>
-        <p>Hours</p>
-      </div>
-      <div class="container-minute">
-        <p class="minute">Time</p>
-        <p>Minutes</p>
-      </div>
-      <div class="container-second">
-        <p class="second">Time</p>
-        <p>Seconds</p>
-      </div>
-    </div>
-  </aside>
-  <header id=" homeBreakpoint">
-    <div id="hamburger-menu">
-      <img src="/images/svg/hamburger-menu.svg" alt="hamburger menu icon" />
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="#galleryBreakpoint">gallery</a></li>
-        <li>
-          <a href="#collectionBreakpoint">collections</a>
-          <ol>
-            <li><a href="/collections/house.html">house</a></li>
-            <li><a href="/collections/windmill.html">windmill</a></li>
-            <li><a href="/collections/farm.html">farm</a></li>
-          </ol>
-        </li>
-        <li><a href="#projectBreakpoint">project</a></li>
-      </ul>
-      <div>
-        <a href="https://www.instagram.com/focusedonft" target="_blank"><img src="/images/svg/instagram-logo.svg"
-            alt="instagram logo" />
-        </a>
-        <a href="https://twitter.com/focusedonft" target="_blank">
-          <img src="/images/svg/twitter-logo.svg" alt="twitter logo" />
-        </a>
-
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="left">
-        <h1>
-          <span>You Buy </span>
-          <span>NFTs</span>
-          <span>We Plant</span>
-          <span>Trees</span>
-        </h1>
-        <a href="https://opensea.io/FocusedoNFT">DISCOVER THE NFTs ON OPENSEA</a>
-      </div>
-      <div class="right">
-        <p>
-          <span> 1 ETH </span>
-          -
-          <span id="ethereumPrice"> </span>
-        </p>
-      </div>
-      <a class="chevron" href="#galleryBreakpoint">
-        <img src="/images/svg/chevron-down.svg" alt="chevron logo" />
-      </a>
-    </section>
-
-    <section class="mainWrapper">
-      <section class="gallery" id="galleryBreakpoint">
-        <h3>See The Gallery</h3>
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <div class="primaryInfo">
-              <h4>Windmill Summer Day</h4>
-              <p>In a Nice Summer Day There Was Windmill...</p>
-              <div><a href="">Buy On OPENSEA</a></div>
-            </div>
-            <figure>
-              <picture>
-                <source srcset="/images/windmill/avif/summer-day.avif" type="image/avif" />
-                <source srcset="/images/windmill/webp/summer-day.webp" type="image/webp" />
-                <img src="/images/windmill/png/summer-day.png" loading="lazy" decoding="async"
-                  alt="diorama windmill summer day" />
-              </picture>
-            </figure>
-            <div class="secondaryInfo">
-              <table>
-                <tr>
-                  <th>Price</th>
-                  <th>Rarity</th>
-                </tr>
-                <tr>
-                  <td>0.015 ETH</td>
-                  <td>Level 1</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="mySlides fade">
-            <div class="primaryInfo">
-              <h4>Windmill Summer Day</h4>
-              <p>In a Nice Summer Day There Was Windmill...</p>
-              <div><a href="">Buy On OPENSEA</a></div>
-            </div>
-            <figure>
-              <picture>
-                <source srcset="/images/windmill/avif/summer-day.avif" type="image/avif" />
-                <source srcset="/images/windmill/webp/summer-day.webp" type="image/webp" />
-                <img src="/images/windmill/png/summer-day.png" loading="lazy" decoding="async"
-                  alt="diorama windmill summer day" />
-              </picture>
-            </figure>
-            <div class="secondaryInfo">
-              <table>
-                <tr>
-                  <th>Price</th>
-                  <th>Rarity</th>
-                </tr>
-                <tr>
-                  <td>0.015 ETH</td>
-                  <td>Level 1</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="mySlides fade">
-            <div class="primaryInfo">
-              <h4>Windmill Summer Day</h4>
-              <p>In a Nice Summer Day There Was Windmill...</p>
-              <div><a href="">Buy On OPENSEA</a></div>
-            </div>
-            <figure>
-              <picture>
-                <source srcset="/images/windmill/avif/summer-day.avif" type="image/avif" />
-                <source srcset="/images/windmill/webp/summer-day.webp" type="image/webp" />
-                <img src="/images/windmill/png/summer-day.png" loading="lazy" decoding="async"
-                  alt="diorama windmill summer day" />
-              </picture>
-            </figure>
-            <div class="secondaryInfo">
-              <table>
-                <tr>
-                  <th>Price</th>
-                  <th>Rarity</th>
-                </tr>
-                <tr>
-                  <td>0.015 ETH</td>
-                  <td>Level 1</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="mySlides fade">
-            <div class="primaryInfo">
-              <h4>Windmill Summer Day</h4>
-              <p>In a Nice Summer Day There Was Windmill...</p>
-              <div><a href="">Buy On OPENSEA</a></div>
-            </div>
-            <figure>
-              <picture>
-                <source srcset="/images/windmill/avif/summer-day.avif" type="image/avif" />
-                <source srcset="/images/windmill/webp/summer-day.webp" type="image/webp" />
-                <img src="/images/windmill/png/summer-day.png" loading="lazy" decoding="async"
-                  alt="diorama windmill summer day" />
-              </picture>
-            </figure>
-            <div class="secondaryInfo">
-              <table>
-                <tr>
-                  <th>Price</th>
-                  <th>Rarity</th>
-                </tr>
-                <tr>
-                  <td>0.015 ETH</td>
-                  <td>Level 1</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="mySlides fade">
-            <div class="primaryInfo">
-              <h4>Windmill Summer Day</h4>
-              <p>In a Nice Summer Day There Was Windmill...</p>
-              <div><a href="">Buy On OPENSEA</a></div>
-            </div>
-            <figure>
-              <picture>
-                <source srcset="/images/windmill/avif/summer-day.avif" type="image/avif" />
-                <source srcset="/images/windmill/webp/summer-day.webp" type="image/webp" />
-                <img src="/images/windmill/png/summer-day.png" loading="lazy" decoding="async"
-                  alt="diorama windmill summer day" />
-              </picture>
-            </figure>
-            <div class="secondaryInfo">
-              <table>
-                <tr>
-                  <th>Price</th>
-                  <th>Rarity</th>
-                </tr>
-                <tr>
-                  <td>0.015 ETH</td>
-                  <td>Level 1</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="mySlides fade">
-            <div class="primaryInfo">
-              <h4>Windmill Summer Day</h4>
-              <p>In a Nice Summer Day There Was Windmill...</p>
-              <div><a href="">Buy On OPENSEA</a></div>
-            </div>
-            <figure>
-              <picture>
-                <source srcset="/images/windmill/avif/summer-day.avif" type="image/avif" />
-                <source srcset="/images/windmill/webp/summer-day.webp" type="image/webp" />
-                <img src="/images/windmill/png/summer-day.png" loading="lazy" decoding="async"
-                  alt="diorama windmill summer day" />
-              </picture>
-            </figure>
-            <div class="secondaryInfo">
-              <table>
-                <tr>
-                  <th>Price</th>
-                  <th>Rarity</th>
-                </tr>
-                <tr>
-                  <td>0.015 ETH</td>
-                  <td>Level 1</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="mySlides fade">
-            <div class="primaryInfo">
-              <h4>Windmill Summer Day</h4>
-              <p>In a Nice Summer Day There Was Windmill...</p>
-              <div><a href="">Buy On OPENSEA</a></div>
-            </div>
-            <figure>
-              <picture>
-                <source srcset="/images/windmill/avif/summer-day.avif" type="image/avif" />
-                <source srcset="/images/windmill/webp/summer-day.webp" type="image/webp" />
-                <img src="/images/windmill/png/summer-day.png" loading="lazy" decoding="async"
-                  alt="diorama windmill summer day" />
-              </picture>
-            </figure>
-            <div class="secondaryInfo">
-              <table>
-                <tr>
-                  <th>Price</th>
-                  <th>Rarity</th>
-                </tr>
-                <tr>
-                  <td>0.015 ETH</td>
-                  <td>Level 1</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="mySlides fade">
-            <div class="primaryInfo">
-              <h4>Windmill Summer Day</h4>
-              <p>In a Nice Summer Day There Was Windmill...</p>
-              <div><a href="">Buy On OPENSEA</a></div>
-            </div>
-            <figure>
-              <picture>
-                <source srcset="/images/windmill/avif/summer-day.avif" type="image/avif" />
-                <source srcset="/images/windmill/webp/summer-day.webp" type="image/webp" />
-                <img src="/images/windmill/png/summer-day.png" loading="lazy" decoding="async"
-                  alt="diorama windmill summer day" />
-              </picture>
-            </figure>
-            <div class="secondaryInfo">
-              <table>
-                <tr>
-                  <th>Price</th>
-                  <th>Rarity</th>
-                </tr>
-                <tr>
-                  <td>0.015 ETH</td>
-                  <td>Level 1</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="mySlides fade">
-            <div class="primaryInfo">
-              <h4>Windmill Summer Day</h4>
-              <p>In a Nice Summer Day There Was Windmill...</p>
-              <div><a href="">Buy On OPENSEA</a></div>
-            </div>
-            <figure>
-              <picture>
-                <source srcset="/images/windmill/avif/summer-day.avif" type="image/avif" />
-                <source srcset="/images/windmill/webp/summer-day.webp" type="image/webp" />
-                <img src="/images/windmill/png/summer-day.png" loading="lazy" decoding="async"
-                  alt="diorama windmill summer day" />
-              </picture>
-            </figure>
-            <div class="secondaryInfo">
-              <table>
-                <tr>
-                  <th>Price</th>
-                  <th>Rarity</th>
-                </tr>
-                <tr>
-                  <td>0.015 ETH</td>
-                  <td>Level 1</td>
-                </tr>
-              </table>
-            </div>
-          </div>
+  <body>
+    <script src="./scripts/countdown.js"></script>
+    <aside>
+      <div class="countdown">
+        <div class="container-year">
+          <p class="year">Time</p>
+          <p>Years</p>
         </div>
-        <div class="dotWrapper">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-          <span class="dot" onclick="currentSlide(6)"></span>
-          <span class="dot" onclick="currentSlide(7)"></span>
-          <span class="dot" onclick="currentSlide(8)"></span>
-          <span class="dot" onclick="currentSlide(9)"></span>
-          <span class="dot" onclick="currentSlide(10)"></span>
+        <div class="container-day">
+          <p class="day">Time</p>
+          <p>Days</p>
         </div>
-      </section>
-
-      <section class="categories" id="collectionBreakpoint">
-        <h3>Discover The Collections</h3>
-        <div class="categoriesWrapper">
-          <div>
-            <figure>
-              <picture>
-                <source srcset="/images/house/avif/summer-day.avif" type="image/avif" />
-                <source srcset="/images/house/webp/summer-day.webp" type="image/webp" />
-                <img src="/images/house/png/summer-day.png" loading="lazy" decoding="async"
-                  alt="diorama house summer day" />
-              </picture>
-            </figure>
-            <h4>The House</h4>
-            <a href="/collections/house.html" target="_self">Go To Category Page</a>
-            <a href="https://opensea.io/collection/diorama-house" target="_blank">Buy on OPENSEA</a>
-          </div>
-          <div>
-            <figure>
-              <picture>
-                <source srcset="/images/windmill/avif/summer-day.avif" type="image/avif" />
-                <source srcset="/images/windmill/webp/summer-day.webp" type="image/webp" />
-                <img src="/images/windmill/png/summer-day.png" loading="lazy" decoding="async"
-                  alt="diorama windmill summer day" />
-              </picture>
-            </figure>
-            <h4>The Windmill</h4>
-            <a href="/collections/windmill.html" target="_self">Go To Category Page</a>
-            <a href="https://opensea.io/collection/diorama-windmill" target="_blank">Buy on OPENSEA</a>
-          </div>
-          <div>
-            <figure>
-              <picture>
-                <source srcset="/images/farm/avif/summer-day.avif" type="image/avif" />
-                <source srcset="/images/farm/webp/summer-day.webp" type="image/webp" />
-                <img src="/images/farm/png/summer-day.png" loading="lazy" decoding="async"
-                  alt="diorama farm summer day" />
-              </picture>
-            </figure>
-            <h4>The Farm</h4>
-            <a href="/collections/farm.html" target="_self">Go To Category Page</a>
-            <a href="https://opensea.io/collection/diorama-farm" target="_blank">Buy on OPENSEA</a>
-          </div>
-          <div>
-            <figure>
-              <picture>
-                <source srcset="/images/chalet/avif/summer-day.avif" type="image/avif" />
-                <source srcset="/images/chalet/webp/summer-day.webp" type="image/webp" />
-                <img src="/images/chalet/png/summer-day.png" loading="lazy" decoding="async"
-                  alt="diorama farm summer day" />
-              </picture>
-            </figure>
-            <h4>The Chalet</h4>
-            <a href="/collections/farm.html" target="_self">Go To Category Page</a>
-            <a href="https://opensea.io/collection/diorama-farm" target="_blank">Buy on OPENSEA</a>
-          </div>
-          <div>
-            <h4>Coming Soon</h4>
-            <p>?</p>
-          </div>
-          <div>
-            <h4>Coming Soon</h4>
-            <p>?</p>
-          </div>
+        <div class="container-hour">
+          <p class="hour">Time</p>
+          <p>Hours</p>
         </div>
-      </section>
-
-      <section class="projectExplained" id="projectBreakpoint">
-        <h3>About The Project</h3>
-        <div id="projectWrapper">
-          <div class="roadmap">
-            <h4>The Roadmap</h4>
-            <div class="point">
-              <p>Plant 100 Trees</p>
-              <p>- 20%</p>
-              <span></span>
-            </div>
-            <div class="point">
-              <p>Reach 10k Followers on Instagram</p>
-              <p>- 48%</p>
-              <span></span>
-            </div>
-            <div class="point">
-              <p>Set the Floor Price to 0.05 ETH</p>
-              <p>- 63%</p>
-              <span></span>
-            </div>
-            <div class="point">
-              <p>Plant Trees By Ourselves</p>
-              <p>- 24%</p>
-              <span></span>
-            </div>
-            <div class="point">
-              <p>Get a Sponsor for each Nation</p>
-              <p>- 57%</p>
-              <span></span>
-            </div>
-            <div class="point">
-              <p>Absorb 2000 Kg of CO2</p>
-              <p>- 87%</p>
-              <span></span>
-            </div>
-            <div class="point">
-              <p>Release the 5th Rarity Grade</p>
-              <p>- 87%</p>
-              <span></span>
-            </div>
-          </div>
-          <div class="explanation">
-            <h4>How our project works</h4>
-            <span>
-              <span>
-                <h2>We are <strong>FocusedoNFT.</strong></h2>
-                <h3>
-                  <strong>Make money</strong> and
-                  <strong>plant trees</strong>.
-                </h3>
-                That's the <strong>idea</strong> behind the project. We want
-                to <strong>help the enviroment</strong> using a whole new
-                concept.
-              </span>
-              <span>
-                We sell <strong>diorama</strong> made on
-                <strong>blender</strong>. Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Explicabo, dignissimos?
-              </span>
-            </span>
-            <a href="/about-the-project.html" target="_blank">Learn More About The Project</a>
-          </div>
+        <div class="container-minute">
+          <p class="minute">Time</p>
+          <p>Minutes</p>
         </div>
-      </section>
-    </section>
-  </main>
-  <footer>
-    <div class="spanWrapper">
-      <span>
-        <p>Privacy Policy</p>
+        <div class="container-second">
+          <p class="second">Time</p>
+          <p>Seconds</p>
+        </div>
+      </div>
+    </aside>
+    <header id=" homeBreakpoint">
+      <div id="hamburger-menu">
+        <img src="/images/svg/hamburger-menu.svg" alt="hamburger menu icon" />
+      </div>
+      <nav>
         <ul>
-          <li><a href="">list item</a></li>
-        </ul>
-      </span>
-      <span>
-        <p>You Can Find Us On:</p>
-        <a href="https://www.instagram.com/focusedonft"><img src="/images/svg/instagram-logo.svg"
-            alt="instagram logo" />
-        </a>
-        <a href="https://twitter.com/focusedonft"><img src="/images/svg/twitter-logo.svg" alt="twitter logo" />
-        </a>
-
-        <a href="https://etherscan.io/address/0xD727ce46AE760afF0A1Cf0e5d353c8f6A2aCBb10">etherscan</a>
-        <a href="mailto:focusedonft@gmail.com">focusedonft@gmail.com</a>
-      </span>
-      <span>
-        <p>Menu</p>
-        <ul>
-          <li><a href="/focusedoNFT.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="#galleryBreakpoint">Gallery</a></li>
           <li>
-            <a href="#categoriesBreakpoint">Categories</a>
+            <a href="#collectionBreakpoint">Collections</a>
             <ol>
               <li><a href="/collections/house.html">House</a></li>
               <li><a href="/collections/windmill.html">Windmill</a></li>
               <li><a href="/collections/farm.html">Farm</a></li>
+              <li><a href="/collections/chalet.html">Chalet</a></li>
             </ol>
           </li>
-          <li><a href="#projectExplained">About The Project</a></li>
+          <li><a href="#projectBreakpoint">Project</a></li>
         </ul>
-      </span>
-    </div>
-    <div class="subFooter">
-      <p>© 2022 - FocusedoNFT - All Rights Reserved</p>
-    </div>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-  <script src="./scripts/animations.js"></script>
-  <script src="./scripts/main.js"></script>
-</body>
+        <div>
+          <a href="https://www.instagram.com/focusedonft" target="_blank"
+            ><img src="/images/svg/instagram-logo.svg" alt="instagram logo" />
+          </a>
+          <a href="https://twitter.com/focusedonft" target="_blank">
+            <img src="/images/svg/twitter-logo.svg" alt="twitter logo" />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="left">
+          <h1>
+            <span>You Buy </span>
+            <span>NFTs</span>
+            <span>We Plant</span>
+            <span>Trees</span>
+          </h1>
+          <a href="https://opensea.io/FocusedoNFT"
+            >DISCOVER THE NFTs ON OPENSEA</a
+          >
+        </div>
+        <div class="right">
+          <p>
+            <span> 1 ETH </span>
+            -
+            <span id="ethereumPrice"> </span>
+          </p>
+        </div>
+        <a class="chevron" href="#galleryBreakpoint">
+          <img src="/images/svg/chevron-down.svg" alt="chevron logo" />
+        </a>
+      </section>
 
+      <section class="mainWrapper">
+        <section class="gallery" id="galleryBreakpoint">
+          <h3>See The Gallery</h3>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="primaryInfo">
+                <h4>Windmill Summer Day</h4>
+                <p>In a Nice Summer Day There Was Windmill...</p>
+                <div><a href="">Buy On OPENSEA</a></div>
+              </div>
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/windmill/avif/summer-day.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/images/windmill/webp/summer-day.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/windmill/png/summer-day.png"
+                    decoding="async"
+                    alt="diorama windmill summer day"
+                  />
+                </picture>
+              </figure>
+              <div class="secondaryInfo">
+                <table>
+                  <tr>
+                    <th>Price</th>
+                    <th>Rarity</th>
+                  </tr>
+                  <tr>
+                    <td>0.015 ETH</td>
+                    <td>Level 1</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="primaryInfo">
+                <h4>Windmill Summer Day</h4>
+                <p>In a Nice Summer Day There Was Windmill...</p>
+                <div><a href="">Buy On OPENSEA</a></div>
+              </div>
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/windmill/avif/summer-day.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/images/windmill/webp/summer-day.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/windmill/png/summer-day.png"
+                    decoding="async"
+                    alt="diorama windmill summer day"
+                  />
+                </picture>
+              </figure>
+              <div class="secondaryInfo">
+                <table>
+                  <tr>
+                    <th>Price</th>
+                    <th>Rarity</th>
+                  </tr>
+                  <tr>
+                    <td>0.015 ETH</td>
+                    <td>Level 1</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="primaryInfo">
+                <h4>Windmill Summer Day</h4>
+                <p>In a Nice Summer Day There Was Windmill...</p>
+                <div><a href="">Buy On OPENSEA</a></div>
+              </div>
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/windmill/avif/summer-day.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/images/windmill/webp/summer-day.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/windmill/png/summer-day.png"
+                    decoding="async"
+                    alt="diorama windmill summer day"
+                  />
+                </picture>
+              </figure>
+              <div class="secondaryInfo">
+                <table>
+                  <tr>
+                    <th>Price</th>
+                    <th>Rarity</th>
+                  </tr>
+                  <tr>
+                    <td>0.015 ETH</td>
+                    <td>Level 1</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="primaryInfo">
+                <h4>Windmill Summer Day</h4>
+                <p>In a Nice Summer Day There Was Windmill...</p>
+                <div><a href="">Buy On OPENSEA</a></div>
+              </div>
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/windmill/avif/summer-day.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/images/windmill/webp/summer-day.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/windmill/png/summer-day.png"
+                    decoding="async"
+                    alt="diorama windmill summer day"
+                  />
+                </picture>
+              </figure>
+              <div class="secondaryInfo">
+                <table>
+                  <tr>
+                    <th>Price</th>
+                    <th>Rarity</th>
+                  </tr>
+                  <tr>
+                    <td>0.015 ETH</td>
+                    <td>Level 1</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="primaryInfo">
+                <h4>Windmill Summer Day</h4>
+                <p>In a Nice Summer Day There Was Windmill...</p>
+                <div><a href="">Buy On OPENSEA</a></div>
+              </div>
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/windmill/avif/summer-day.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/images/windmill/webp/summer-day.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/windmill/png/summer-day.png"
+                    decoding="async"
+                    alt="diorama windmill summer day"
+                  />
+                </picture>
+              </figure>
+              <div class="secondaryInfo">
+                <table>
+                  <tr>
+                    <th>Price</th>
+                    <th>Rarity</th>
+                  </tr>
+                  <tr>
+                    <td>0.015 ETH</td>
+                    <td>Level 1</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="primaryInfo">
+                <h4>Windmill Summer Day</h4>
+                <p>In a Nice Summer Day There Was Windmill...</p>
+                <div><a href="">Buy On OPENSEA</a></div>
+              </div>
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/windmill/avif/summer-day.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/images/windmill/webp/summer-day.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/windmill/png/summer-day.png"
+                    decoding="async"
+                    alt="diorama windmill summer day"
+                  />
+                </picture>
+              </figure>
+              <div class="secondaryInfo">
+                <table>
+                  <tr>
+                    <th>Price</th>
+                    <th>Rarity</th>
+                  </tr>
+                  <tr>
+                    <td>0.015 ETH</td>
+                    <td>Level 1</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="primaryInfo">
+                <h4>Windmill Summer Day</h4>
+                <p>In a Nice Summer Day There Was Windmill...</p>
+                <div><a href="">Buy On OPENSEA</a></div>
+              </div>
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/windmill/avif/summer-day.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/images/windmill/webp/summer-day.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/windmill/png/summer-day.png"
+                    decoding="async"
+                    alt="diorama windmill summer day"
+                  />
+                </picture>
+              </figure>
+              <div class="secondaryInfo">
+                <table>
+                  <tr>
+                    <th>Price</th>
+                    <th>Rarity</th>
+                  </tr>
+                  <tr>
+                    <td>0.015 ETH</td>
+                    <td>Level 1</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="primaryInfo">
+                <h4>Windmill Summer Day</h4>
+                <p>In a Nice Summer Day There Was Windmill...</p>
+                <div><a href="">Buy On OPENSEA</a></div>
+              </div>
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/windmill/avif/summer-day.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/images/windmill/webp/summer-day.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/windmill/png/summer-day.png"
+                    decoding="async"
+                    alt="diorama windmill summer day"
+                  />
+                </picture>
+              </figure>
+              <div class="secondaryInfo">
+                <table>
+                  <tr>
+                    <th>Price</th>
+                    <th>Rarity</th>
+                  </tr>
+                  <tr>
+                    <td>0.015 ETH</td>
+                    <td>Level 1</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="primaryInfo">
+                <h4>Windmill Summer Day</h4>
+                <p>In a Nice Summer Day There Was Windmill...</p>
+                <div><a href="">Buy On OPENSEA</a></div>
+              </div>
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/windmill/avif/summer-day.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/images/windmill/webp/summer-day.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/windmill/png/summer-day.png"
+                    decoding="async"
+                    alt="diorama windmill summer day"
+                  />
+                </picture>
+              </figure>
+              <div class="secondaryInfo">
+                <table>
+                  <tr>
+                    <th>Price</th>
+                    <th>Rarity</th>
+                  </tr>
+                  <tr>
+                    <td>0.015 ETH</td>
+                    <td>Level 1</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="dotWrapper">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+          </div>
+        </section>
+
+        <section class="categories" id="collectionBreakpoint">
+          <h3>Discover The Collections</h3>
+          <div class="categoriesWrapper">
+            <div>
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/house/avif/summer-day.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/images/house/webp/summer-day.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/house/png/summer-day.png"
+                    decoding="async"
+                    alt="diorama house summer day"
+                  />
+                </picture>
+              </figure>
+              <h4>The House</h4>
+              <a href="/collections/house.html" target="_self"
+                >Go To Category Page</a
+              >
+              <a
+                href="https://opensea.io/collection/diorama-house"
+                target="_blank"
+                >Buy on OPENSEA</a
+              >
+            </div>
+            <div>
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/windmill/avif/summer-day.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/images/windmill/webp/summer-day.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/windmill/png/summer-day.png"
+                    decoding="async"
+                    alt="diorama windmill summer day"
+                  />
+                </picture>
+              </figure>
+              <h4>The Windmill</h4>
+              <a href="/collections/windmill.html" target="_self"
+                >Go To Category Page</a
+              >
+              <a
+                href="https://opensea.io/collection/diorama-windmill"
+                target="_blank"
+                >Buy on OPENSEA</a
+              >
+            </div>
+            <div>
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/farm/avif/summer-day.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/images/farm/webp/summer-day.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/farm/png/summer-day.png"
+                    decoding="async"
+                    alt="diorama farm summer day"
+                  />
+                </picture>
+              </figure>
+              <h4>The Farm</h4>
+              <a href="/collections/farm.html" target="_self"
+                >Go To Category Page</a
+              >
+              <a
+                href="https://opensea.io/collection/diorama-farm"
+                target="_blank"
+                >Buy on OPENSEA</a
+              >
+            </div>
+            <div>
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/chalet/avif/summer-day.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/images/chalet/webp/summer-day.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/chalet/png/summer-day.png"
+                    decoding="async"
+                    alt="diorama farm summer day"
+                  />
+                </picture>
+              </figure>
+              <h4>The Chalet</h4>
+              <a href="/collections/farm.html" target="_self"
+                >Go To Category Page</a
+              >
+              <a
+                href="https://opensea.io/collection/diorama-farm"
+                target="_blank"
+                >Buy on OPENSEA</a
+              >
+            </div>
+            <div>
+              <h4>Coming Soon</h4>
+              <p>?</p>
+            </div>
+            <div>
+              <h4>Coming Soon</h4>
+              <p>?</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="projectExplained" id="projectBreakpoint">
+          <h3>About The Project</h3>
+          <div id="projectWrapper">
+            <div class="roadmap">
+              <h4>The Roadmap</h4>
+              <div class="point">
+                <p>Plant 100 Trees</p>
+                <p>- 0%</p>
+                <span></span>
+              </div>
+              <div class="point">
+                <p>Reach 10k Followers on Instagram</p>
+                <p>- 0%</p>
+                <span></span>
+              </div>
+              <div class="point">
+                <p>Set the Floor Price to 0.05 ETH</p>
+                <p>- 0%</p>
+                <span></span>
+              </div>
+              <div class="point">
+                <p>Plant Trees By Ourselves</p>
+                <p>- 0%</p>
+                <span></span>
+              </div>
+              <div class="point">
+                <p>Get a Sponsor for each Nation</p>
+                <p>- 0%</p>
+                <span></span>
+              </div>
+              <div class="point">
+                <p>Absorb 2000 Kg of CO2</p>
+                <p>- 0%</p>
+                <span></span>
+              </div>
+              <div class="point">
+                <p>Release the 5th Rarity Grade</p>
+                <p>- 0%</p>
+                <span></span>
+              </div>
+            </div>
+            <div class="explanation">
+              <h4>How our project works</h4>
+              <p>
+                We are <strong>FocusedoNFT.</strong>
+                <strong>Make money</strong> and <strong>plant trees</strong>.
+                That's the <strong>idea</strong> behind the project. We want to
+                <strong>help the enviroment</strong> and save the planet earth
+                using a whole new concept.
+              </p>
+              <p>
+                We all <strong>work together</strong> to ensure that our
+                <strong>mission</strong> is <strong>accomplished</strong> as
+                effectively and quickly as possible because the
+                <strong>time left</strong> is very <strong>limited</strong>.
+              </p>
+              <a href="/about-the-project.html" target="_self"
+                >Learn More About The Project</a
+              >
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <div class="spanWrapper">
+        <span>
+          <p>Privacy Policy</p>
+          <ul>
+            <li><a href="">list item</a></li>
+          </ul>
+        </span>
+        <span>
+          <p>You Can Find Us On:</p>
+          <a href="https://www.instagram.com/focusedonft"
+            ><img src="/images/svg/instagram-logo.svg" alt="instagram logo" />
+          </a>
+          <a href="https://twitter.com/focusedonft"
+            ><img src="/images/svg/twitter-logo.svg" alt="twitter logo" />
+          </a>
+
+          <a
+            href="https://etherscan.io/address/0xD727ce46AE760afF0A1Cf0e5d353c8f6A2aCBb10"
+            >etherscan</a
+          >
+          <a href="mailto:focusedonft@gmail.com">focusedonft@gmail.com</a>
+        </span>
+        <span>
+          <p>Menu</p>
+          <ul>
+            <li><a href="/focusedoNFT.html">Home</a></li>
+            <li><a href="#galleryBreakpoint">Gallery</a></li>
+            <li>
+              <a href="#categoriesBreakpoint">Categories</a>
+              <ol>
+                <li><a href="/collections/house.html">House</a></li>
+                <li><a href="/collections/windmill.html">Windmill</a></li>
+                <li><a href="/collections/farm.html">Farm</a></li>
+                <li><a href="/collections/chalet.html">Chalet</a></li>
+              </ol>
+            </li>
+            <li><a href="#projectExplained">About The Project</a></li>
+          </ul>
+        </span>
+      </div>
+      <div class="subFooter">
+        <p>© 2022 - FocusedoNFT - All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="./scripts/animations.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
 </html>
 <!--
  ____   ____  
