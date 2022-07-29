@@ -400,11 +400,13 @@ body .gallery .slideshow-container .mySlides .primaryInfo {
 body .gallery .slideshow-container .mySlides .primaryInfo h4 {
   display: inline;
   font-size: 1.5rem;
+  text-transform: capitalize;
 }
 body .gallery .slideshow-container .mySlides .primaryInfo p {
   font-size: 1rem;
   margin: 5% 0 15%;
   font-weight: 200;
+  text-transform: capitalize;
 }
 body .gallery .slideshow-container .mySlides .primaryInfo a {
   text-decoration: none;

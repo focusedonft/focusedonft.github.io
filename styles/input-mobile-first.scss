@@ -116,11 +116,13 @@ body {
           h4 {
             display: inline;
             font-size: 1.5rem;
+            text-transform: capitalize;
           }
           p {
             font-size: 1rem;
             margin: 5% 0 15%;
             font-weight: 200;
+            text-transform: capitalize;
           }
           a {
             @include mixins.callToAction(1);
